@@ -4,8 +4,8 @@
     <title>Leif Dreizler</title>
     <description>Information Security Professional</description>
     <link>http://localhost:4000/</link>
-    <pubDate>Thu, 10 Dec 2020 14:06:39 -0800</pubDate>
-    <lastBuildDate>Thu, 10 Dec 2020 14:06:39 -0800</lastBuildDate>
+    <pubDate>Thu, 10 Dec 2020 14:40:29 -0800</pubDate>
+    <lastBuildDate>Thu, 10 Dec 2020 14:40:29 -0800</lastBuildDate>
     <generator>Jekyll v3.9.0</generator>
     
       <item>
@@ -70,6 +70,23 @@
       </item>
     
       <item>
+        <title>Episode #40: Where Engineering Meets Security</title>
+        <description>&lt;p&gt;In this episode we’re joined by Leif Dreizler, Senior Application Security Engineer at Segment. Although his specialization in AppSec started in security consulting during his senior year of college, his background has helped him embed security into engineering. Leif joined the podcast to discuss his journey into AppSec, his observations about the industry, and his recommendations for entering the field.&lt;/p&gt;
+
+&lt;p&gt;Podcast Link: &lt;a href=&quot;https://soundcloud.com/humans-of-infosec/episode-40-leif-dreizler-where-engineering-meets-security&quot;&gt;Episode #40: Where Engineering Meets Security&lt;/a&gt;&lt;/p&gt;
+</description>
+        <pubDate>Tue, 17 Mar 2020 05:00:00 -0700</pubDate>
+        <link>http://localhost:4000/2020/Where-engineering-meets-security/</link>
+        <guid isPermaLink="true">http://localhost:4000/2020/Where-engineering-meets-security/</guid>
+        
+        <category>personal security story</category>
+        
+        
+        <category>podcast</category>
+        
+      </item>
+    
+      <item>
         <title>Helping Customers Secure Their Accounts</title>
         <description>&lt;p&gt;This blog discusses how the Segment Security Engineering Team approaches security and building software. It also talks about how we built 2FA and our password strength meter.&lt;/p&gt;
 
@@ -85,6 +102,92 @@
         
         
         <category>blog</category>
+        
+      </item>
+    
+      <item>
+        <title>The Secure Developer Episode #33</title>
+        <description>&lt;p&gt;In Episode 33 of The Secure Developer, Guy is joined by Leif Dreizler and Eric Ellett of Segment. They discuss motivating security teams, the importance of investing time in your business relationships, and the longterm rewards of proper security training.&lt;/p&gt;
+
+&lt;p&gt;Podcast Link: &lt;a href=&quot;https://www.youtube.com/watch?v=tf31VXU5Uzc&quot;&gt;The Secure Developer Episode #33&lt;/a&gt;&lt;/p&gt;
+</description>
+        <pubDate>Fri, 28 Jun 2019 05:00:00 -0700</pubDate>
+        <link>http://localhost:4000/2019/Secure-developer/</link>
+        <guid isPermaLink="true">http://localhost:4000/2019/Secure-developer/</guid>
+        
+        <category>security engineering</category>
+        
+        <category>developer training</category>
+        
+        
+        <category>podcast</category>
+        
+      </item>
+    
+      <item>
+        <title>A Good First Impression Can Work Wonders: Creating AppSec Training That Developers Love</title>
+        <description>&lt;p&gt;Good vulnerability response practices are critical to software security. But good vulnerability response practices work even better on software built with security in mind.&lt;/p&gt;
+
+&lt;p&gt;At Segment, we use vulnerability report data and gamification to help our developers grow their security mindset. In this session, we’ll explain our two-tiered approach to both helping developers understand trends in our vulnerability reports. We take a two-tiered approach, first presenting vulnerability report and pentesting trends to help teach where vulnerabilities have been identified in the past, and then teaching our team how to hunt for and report security bugs they’ve found.&lt;/p&gt;
+
+&lt;p&gt;We’ve found this approach really helpful to increasing security before release, almost eliminating one class of vulnerability reports. In this session, I’ll talk about the details of how we do this security training—see if you think this could help you!&lt;/p&gt;
+
+&lt;p&gt;Conference Link: &lt;a href=&quot;https://www.youtube.com/watch?v=cnz4X3yoI08&quot;&gt;LocoMocoSec 2019&lt;/a&gt;&lt;/p&gt;
+</description>
+        <pubDate>Thu, 18 Apr 2019 05:00:00 -0700</pubDate>
+        <link>http://localhost:4000/2019/LocoMocoSec/</link>
+        <guid isPermaLink="true">http://localhost:4000/2019/LocoMocoSec/</guid>
+        
+        <category>developer training</category>
+        
+        <category>engineering partnership</category>
+        
+        <category>locomocosec</category>
+        
+        
+        <category>presentation</category>
+        
+      </item>
+    
+      <item>
+        <title>Working with Developers for Fun and Progress</title>
+        <description>&lt;p&gt;Forging a strong relationship with developers is essential part of creating an impactful AppSec program. Without it, your team will have little idea what’s going on and will have trouble getting bugs fixed and features shipped. Segment has built strong ties to developers using our competition-based training featuring Burp Suite and OWASP Juice Shop, partnership during implementation of tooling, and contributions to the existing codebase. This presentation is chock full of practical examples and references that attendees can bring back to their organization.&lt;/p&gt;
+
+&lt;p&gt;Conference Link: &lt;a href=&quot;https://www.youtube.com/watch?v=ltXYbIacHr8&quot;&gt;AppSec California 2019&lt;/a&gt;&lt;/p&gt;
+</description>
+        <pubDate>Thu, 24 Jan 2019 04:00:00 -0800</pubDate>
+        <link>http://localhost:4000/2019/AppSec-california/</link>
+        <guid isPermaLink="true">http://localhost:4000/2019/AppSec-california/</guid>
+        
+        <category>developer training</category>
+        
+        <category>engineering partnership</category>
+        
+        <category>appsec california</category>
+        
+        
+        <category>presentation</category>
+        
+      </item>
+    
+      <item>
+        <title>Absolute AppSec Episode #42</title>
+        <description>&lt;p&gt;Members of Segment’s security and engineering teams appeared on the Absolute AppSec podcast to discuss product security features, SSRF mitigations, developer training, and our approach to building a security program.&lt;/p&gt;
+
+&lt;p&gt;Conference Link: &lt;a href=&quot;https://www.youtube.com/watch?v=fK_68n92t3g&quot;&gt;Absolute AppSec Episode #42&lt;/a&gt;&lt;/p&gt;
+</description>
+        <pubDate>Tue, 08 Jan 2019 04:00:00 -0800</pubDate>
+        <link>http://localhost:4000/2019/Absolute-appsec-42/</link>
+        <guid isPermaLink="true">http://localhost:4000/2019/Absolute-appsec-42/</guid>
+        
+        <category>developer training</category>
+        
+        <category>product security</category>
+        
+        <category>ssrf</category>
+        
+        
+        <category>presentation</category>
         
       </item>
     
