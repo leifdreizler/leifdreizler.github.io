@@ -4,8 +4,8 @@
     <title>Leif Dreizler</title>
     <description>Information Security Professional</description>
     <link>http://localhost:4000/</link>
-    <pubDate>Thu, 10 Dec 2020 14:01:39 -0800</pubDate>
-    <lastBuildDate>Thu, 10 Dec 2020 14:01:39 -0800</lastBuildDate>
+    <pubDate>Thu, 10 Dec 2020 14:06:39 -0800</pubDate>
+    <lastBuildDate>Thu, 10 Dec 2020 14:06:39 -0800</lastBuildDate>
     <generator>Jekyll v3.9.0</generator>
     
       <item>
@@ -53,8 +53,10 @@
       </item>
     
       <item>
-        <title>How we run our bug bounty program at Segment</title>
-        <description>&lt;p&gt;This was published on the &lt;a href=&quot;https://segment.com/blog/bug-bounty-at-segment/&quot;&gt;Segment Blog&lt;/a&gt; and breaks down how to start and manage a bug bounty program, consistently achieve good results, and maintain healthy relationships with the people that power the program.&lt;/p&gt;
+        <title>How We Run Our Bug Bounty Program at Segment</title>
+        <description>&lt;p&gt;This blog breaks down how to start and manage a bug bounty program, consistently achieve good results, and maintain healthy relationships with the people that power the program.&lt;/p&gt;
+
+&lt;p&gt;Blog Link: &lt;a href=&quot;https://segment.com/blog/bug-bounty-at-segment/&quot;&gt;How We Run Our Bug Bounty Program at Segment&lt;/a&gt;&lt;/p&gt;
 </description>
         <pubDate>Tue, 31 Mar 2020 05:00:00 -0700</pubDate>
         <link>http://localhost:4000/2020/How-we-run-our-bug-bounty-program-at-Segment/</link>
@@ -68,8 +70,10 @@
       </item>
     
       <item>
-        <title>Helping customers secure their accounts</title>
-        <description>&lt;p&gt;This was published on the &lt;a href=&quot;https://segment.com/blog/helping-customers-secure-their-accounts/&quot;&gt;Segment Blog&lt;/a&gt; and discusses how the Segment Security Engineering Team approaches security and building software. It also talks about how we built 2FA and our password strength meter.&lt;/p&gt;
+        <title>Helping Customers Secure Their Accounts</title>
+        <description>&lt;p&gt;This blog discusses how the Segment Security Engineering Team approaches security and building software. It also talks about how we built 2FA and our password strength meter.&lt;/p&gt;
+
+&lt;p&gt;Blog Link: &lt;a href=&quot;https://segment.com/blog/helping-customers-secure-their-accounts/&quot;&gt;Helping Customers Secure Their Accounts&lt;/a&gt;&lt;/p&gt;
 </description>
         <pubDate>Sat, 29 Jun 2019 05:00:00 -0700</pubDate>
         <link>http://localhost:4000/2019/Helping-customers-secure-their-accounts/</link>
