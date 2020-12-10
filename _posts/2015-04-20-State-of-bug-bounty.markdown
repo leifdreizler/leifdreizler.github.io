@@ -1,6 +1,6 @@
 ---
-title: "Enumall - The Ultimate Subdomain Tool"
-date: 2016-08-03 12:00:00
+title: "State of Bug Bounty"
+date: 2015-04-20 12:00:00
 categories: [presentation]
 tags:
   [
@@ -31,5 +31,4 @@ who the researchers are and general trends observed like the growth of
 invitation-only programs. In addition, Leif will cover best practices for
 attendees looking to start their own bug bounty program.
 
-This presentation was given at Structure Security 2016; BSides SF/LA/Portland/Raleigh 2015
-Conference Link: [BSides SF 2015](https://www.youtube.com/watch?v=L1XTaa1wjSw)
+This presentation was given at Structure Security 2016 and BSides SF/LA/Portland/Raleigh 2015. Conference Link: [BSides SF 2015](https://www.youtube.com/watch?v=L1XTaa1wjSw)
