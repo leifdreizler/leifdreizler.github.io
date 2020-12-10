@@ -3,7 +3,37 @@
   
     
     <url>
-      <loc>https://leif.pizza/2020/How-we-run-our-bug-bounty-program-at-Segment/</loc>
+      <loc>http://localhost:4000/2020/Absolute-appsec-104/</loc>
+      
+        <lastmod>2020-08-05T05:00:00-07:00</lastmod>
+      
+      
+        <changefreq>monthly</changefreq>
+      
+      
+        <priority>0.5</priority>
+      
+    </url>
+    
+  
+    
+    <url>
+      <loc>http://localhost:4000/2020/Unsupervised-Learning/</loc>
+      
+        <lastmod>2020-04-02T05:00:00-07:00</lastmod>
+      
+      
+        <changefreq>monthly</changefreq>
+      
+      
+        <priority>0.5</priority>
+      
+    </url>
+    
+  
+    
+    <url>
+      <loc>http://localhost:4000/2020/How-we-run-our-bug-bounty-program-at-Segment/</loc>
       
         <lastmod>2020-03-31T05:00:00-07:00</lastmod>
       
@@ -18,7 +48,7 @@
   
     
     <url>
-      <loc>https://leif.pizza/2019/Helping-customers-secure-their-accounts/</loc>
+      <loc>http://localhost:4000/2019/Helping-customers-secure-their-accounts/</loc>
       
         <lastmod>2019-06-29T05:00:00-07:00</lastmod>
       
@@ -36,41 +66,9 @@
   
     
     <url>
-      <loc>https://leif.pizza/feed.xml</loc>
+      <loc>http://localhost:4000/feed.xml</loc>
       
-        <lastmod>2020-12-10T12:33:18-08:00</lastmod>
-      
-      
-        <changefreq>monthly</changefreq>
-      
-      
-        <priority>0.3</priority>
-      
-    </url>
-    
-  
-    
-    <url>
-      <loc>https://leif.pizza/humans.txt</loc>
-      
-        <lastmod>2020-12-10T12:33:18-08:00</lastmod>
-      
-      
-        <changefreq>monthly</changefreq>
-      
-      
-        <priority>0.3</priority>
-      
-    </url>
-    
-  
-    
-  
-    
-    <url>
-      <loc>https://leif.pizza/js/main.js</loc>
-      
-        <lastmod>2020-12-10T12:33:18-08:00</lastmod>
+        <lastmod>2020-12-10T14:01:39-08:00</lastmod>
       
       
         <changefreq>monthly</changefreq>
@@ -83,9 +81,9 @@
   
     
     <url>
-      <loc>https://leif.pizza/css/main.css</loc>
+      <loc>http://localhost:4000/humans.txt</loc>
       
-        <lastmod>2020-12-10T12:33:18-08:00</lastmod>
+        <lastmod>2020-12-10T14:01:39-08:00</lastmod>
       
       
         <changefreq>monthly</changefreq>
@@ -99,12 +97,44 @@
     
   
     
+    <url>
+      <loc>http://localhost:4000/js/main.js</loc>
+      
+        <lastmod>2020-12-10T14:01:39-08:00</lastmod>
+      
+      
+        <changefreq>monthly</changefreq>
+      
+      
+        <priority>0.3</priority>
+      
+    </url>
+    
   
     
     <url>
-      <loc>https://leif.pizza/assets/css/style.css</loc>
+      <loc>http://localhost:4000/css/main.css</loc>
       
-        <lastmod>2020-12-10T12:33:18-08:00</lastmod>
+        <lastmod>2020-12-10T14:01:39-08:00</lastmod>
+      
+      
+        <changefreq>monthly</changefreq>
+      
+      
+        <priority>0.3</priority>
+      
+    </url>
+    
+  
+    
+  
+    
+  
+    
+    <url>
+      <loc>http://localhost:4000/assets/css/style.css</loc>
+      
+        <lastmod>2020-12-10T14:01:39-08:00</lastmod>
       
       
         <changefreq>monthly</changefreq>

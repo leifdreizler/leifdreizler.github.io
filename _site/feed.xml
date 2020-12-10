@@ -3,42 +3,84 @@
   <channel>
     <title>Leif Dreizler</title>
     <description>Information Security Professional</description>
-    <link>https://leif.pizza/</link>
-    <pubDate>Thu, 10 Dec 2020 12:33:18 -0800</pubDate>
-    <lastBuildDate>Thu, 10 Dec 2020 12:33:18 -0800</lastBuildDate>
+    <link>http://localhost:4000/</link>
+    <pubDate>Thu, 10 Dec 2020 14:01:39 -0800</pubDate>
+    <lastBuildDate>Thu, 10 Dec 2020 14:01:39 -0800</lastBuildDate>
     <generator>Jekyll v3.9.0</generator>
     
       <item>
+        <title>Absolute AppSec Episode #104</title>
+        <description>&lt;p&gt;I was invited back to the Absolute AppSec podcast to discuss how security can embed within engineering teams. We discussed how to plan a successful embed within another team as well as various authentication-related topics including SSO, JWTs, and SCIM.&lt;/p&gt;
+
+&lt;p&gt;Podcast Link: &lt;a href=&quot;https://www.youtube.com/watch?v=jmM6lc3xWDQ&quot;&gt;Absolute AppSec Episode #104&lt;/a&gt;&lt;/p&gt;
+</description>
+        <pubDate>Wed, 05 Aug 2020 05:00:00 -0700</pubDate>
+        <link>http://localhost:4000/2020/Absolute-appsec-104/</link>
+        <guid isPermaLink="true">http://localhost:4000/2020/Absolute-appsec-104/</guid>
+        
+        <category>product security</category>
+        
+        <category>sso</category>
+        
+        <category>jwt</category>
+        
+        <category>scim</category>
+        
+        
+        <category>podcast</category>
+        
+      </item>
+    
+      <item>
+        <title>A Conversation With Leif Dreizler About Security Engineering at Segment</title>
+        <description>&lt;p&gt;I join Unsupervised Learning’s host, Daniel Miessler, to chat about how the Segment Security Org is structured and what the Security Engineering Team is focused on. We discussed our team’s ‘Security Metrics’ project and our thought process around embedding within software engineering teams to build security centric services and features, like Authentication.&lt;/p&gt;
+
+&lt;p&gt;Podcast Link: &lt;a href=&quot;https://omny.fm/shows/unsupervised-learning/a-conversation-leif-dreizler-about-security-engine&quot;&gt;A Conversation With Leif Dreizler About Security Engineering at Segment&lt;/a&gt;&lt;/p&gt;
+</description>
+        <pubDate>Thu, 02 Apr 2020 05:00:00 -0700</pubDate>
+        <link>http://localhost:4000/2020/Unsupervised-Learning/</link>
+        <guid isPermaLink="true">http://localhost:4000/2020/Unsupervised-Learning/</guid>
+        
+        <category>security metrics</category>
+        
+        <category>security org structure</category>
+        
+        <category>security embed</category>
+        
+        
+        <category>podcast</category>
+        
+      </item>
+    
+      <item>
         <title>How we run our bug bounty program at Segment</title>
-        <description>&lt;p&gt;&lt;a href=&quot;https://segment.com/blog/bug-bounty-at-segment/&quot;&gt;This was published on the Segment Blog&lt;/a&gt; and breaks down how to start and manage a bug bounty program, consistently achieve good results, and maintain healthy relationships with the people that power the program.&lt;/p&gt;
+        <description>&lt;p&gt;This was published on the &lt;a href=&quot;https://segment.com/blog/bug-bounty-at-segment/&quot;&gt;Segment Blog&lt;/a&gt; and breaks down how to start and manage a bug bounty program, consistently achieve good results, and maintain healthy relationships with the people that power the program.&lt;/p&gt;
 </description>
         <pubDate>Tue, 31 Mar 2020 05:00:00 -0700</pubDate>
-        <link>https://leif.pizza/2020/How-we-run-our-bug-bounty-program-at-Segment/</link>
-        <guid isPermaLink="true">https://leif.pizza/2020/How-we-run-our-bug-bounty-program-at-Segment/</guid>
+        <link>http://localhost:4000/2020/How-we-run-our-bug-bounty-program-at-Segment/</link>
+        <guid isPermaLink="true">http://localhost:4000/2020/How-we-run-our-bug-bounty-program-at-Segment/</guid>
         
         <category>bug bounty</category>
         
         
-        <category>bug bounty</category>
+        <category>blog</category>
         
       </item>
     
       <item>
         <title>Helping customers secure their accounts</title>
-        <description>&lt;p&gt;&lt;a href=&quot;https://segment.com/blog/helping-customers-secure-their-accounts/&quot;&gt;This was published on the Segment Blog&lt;/a&gt; and discusses how the Segment Security Engineering Team approaches security and building software. It also about how we built 2FA and our password strength meter.&lt;/p&gt;
+        <description>&lt;p&gt;This was published on the &lt;a href=&quot;https://segment.com/blog/helping-customers-secure-their-accounts/&quot;&gt;Segment Blog&lt;/a&gt; and discusses how the Segment Security Engineering Team approaches security and building software. It also talks about how we built 2FA and our password strength meter.&lt;/p&gt;
 </description>
         <pubDate>Sat, 29 Jun 2019 05:00:00 -0700</pubDate>
-        <link>https://leif.pizza/2019/Helping-customers-secure-their-accounts/</link>
-        <guid isPermaLink="true">https://leif.pizza/2019/Helping-customers-secure-their-accounts/</guid>
+        <link>http://localhost:4000/2019/Helping-customers-secure-their-accounts/</link>
+        <guid isPermaLink="true">http://localhost:4000/2019/Helping-customers-secure-their-accounts/</guid>
         
         <category>product security</category>
         
         <category>security engineering</category>
         
         
-        <category>product security</category>
-        
-        <category>security engineering</category>
+        <category>blog</category>
         
       </item>
     
