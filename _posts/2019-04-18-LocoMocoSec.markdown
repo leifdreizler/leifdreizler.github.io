@@ -2,7 +2,8 @@
 title: "A Good First Impression Can Work Wonders: Creating AppSec Training That Developers Love"
 date: 2019-04-18 12:00:00
 categories: [presentation]
-tags: [developer training, engineering partnership, locomocosec]
+tags:
+  [developer training, engineering partnership, security culture, locomocosec]
 ---
 
 Good vulnerability response practices are critical to software security. But good vulnerability response practices work even better on software built with security in mind.

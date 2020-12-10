@@ -4,8 +4,8 @@
     <title>Leif Dreizler</title>
     <description>Information Security Professional</description>
     <link>http://localhost:4000/</link>
-    <pubDate>Thu, 10 Dec 2020 14:40:29 -0800</pubDate>
-    <lastBuildDate>Thu, 10 Dec 2020 14:40:29 -0800</lastBuildDate>
+    <pubDate>Thu, 10 Dec 2020 15:07:29 -0800</pubDate>
+    <lastBuildDate>Thu, 10 Dec 2020 15:07:29 -0800</lastBuildDate>
     <generator>Jekyll v3.9.0</generator>
     
       <item>
@@ -142,6 +142,8 @@
         
         <category>engineering partnership</category>
         
+        <category>security culture</category>
+        
         <category>locomocosec</category>
         
         
@@ -163,6 +165,8 @@
         
         <category>engineering partnership</category>
         
+        <category>security culture</category>
+        
         <category>appsec california</category>
         
         
@@ -174,7 +178,7 @@
         <title>Absolute AppSec Episode #42</title>
         <description>&lt;p&gt;Members of Segment’s security and engineering teams appeared on the Absolute AppSec podcast to discuss product security features, SSRF mitigations, developer training, and our approach to building a security program.&lt;/p&gt;
 
-&lt;p&gt;Conference Link: &lt;a href=&quot;https://www.youtube.com/watch?v=fK_68n92t3g&quot;&gt;Absolute AppSec Episode #42&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Podcast Link: &lt;a href=&quot;https://www.youtube.com/watch?v=fK_68n92t3g&quot;&gt;Absolute AppSec Episode #42&lt;/a&gt;&lt;/p&gt;
 </description>
         <pubDate>Tue, 08 Jan 2019 04:00:00 -0800</pubDate>
         <link>http://localhost:4000/2019/Absolute-appsec-42/</link>
@@ -185,6 +189,27 @@
         <category>product security</category>
         
         <category>ssrf</category>
+        
+        
+        <category>podcast</category>
+        
+      </item>
+    
+      <item>
+        <title>Year[0]: AppSec at a Startup</title>
+        <description>&lt;p&gt;Have you wanted to be on the application security team at a startup, but were worried about having an employer that can’t figure out how to monetize its user base, being compensated in potentially worthless stock options, or discovering your company’s business model is based on selling a $400 juicer and expensive juice packets that could actually be squeezed by hand? If so, then this talk is for you! From the safety of the audience you’ll hear about the first year of an appsec program at a tech startup. We’ll cover how to win over the hearts and minds of your developers, useful tooling/automation, and other topics to rapidly improve the security of a growing SaaS startup.&lt;/p&gt;
+
+&lt;p&gt;Conference Link: &lt;a href=&quot;https://www.youtube.com/watch?v=ImJqBX0OXew&quot;&gt;LASCON 2018&lt;/a&gt;&lt;/p&gt;
+</description>
+        <pubDate>Thu, 25 Oct 2018 05:00:00 -0700</pubDate>
+        <link>http://localhost:4000/2018/LASCON/</link>
+        <guid isPermaLink="true">http://localhost:4000/2018/LASCON/</guid>
+        
+        <category>startup security</category>
+        
+        <category>security culture</category>
+        
+        <category>LASCON</category>
         
         
         <category>presentation</category>

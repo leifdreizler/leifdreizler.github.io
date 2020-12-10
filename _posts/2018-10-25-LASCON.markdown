@@ -1,0 +1,10 @@
+---
+title: "Year[0]: AppSec at a Startup"
+date: 2018-10-25 12:00:00
+categories: [presentation]
+tags: [startup security, security culture, LASCON]
+---
+
+Have you wanted to be on the application security team at a startup, but were worried about having an employer that can’t figure out how to monetize its user base, being compensated in potentially worthless stock options, or discovering your company’s business model is based on selling a $400 juicer and expensive juice packets that could actually be squeezed by hand? If so, then this talk is for you! From the safety of the audience you’ll hear about the first year of an appsec program at a tech startup. We’ll cover how to win over the hearts and minds of your developers, useful tooling/automation, and other topics to rapidly improve the security of a growing SaaS startup.
+
+Conference Link: [LASCON 2018](https://www.youtube.com/watch?v=ImJqBX0OXew)
