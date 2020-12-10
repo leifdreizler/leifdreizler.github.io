@@ -5,11 +5,11 @@ categories: [presentation]
 tags:
   [
     bug bounty,
-    structure security,
     bsides sf,
     bsides la,
     bsides portland,
     bsides raleigh,
+    structure security,
   ]
 ---
 
