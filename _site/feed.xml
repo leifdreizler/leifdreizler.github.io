@@ -1,0 +1,1002 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Leif Dreizler</title>
+    <description>Information Security Professional</description>
+    <link>https://leifdreizler.com//</link>
+    <atom:link href="https://leifdreizler.com//feed.xml" rel="self" type="application/rss+xml" />
+    <pubDate>Tue, 04 Apr 2017 13:24:18 -0700</pubDate>
+    <lastBuildDate>Tue, 04 Apr 2017 13:24:18 -0700</lastBuildDate>
+    <generator>Jekyll v3.0.2</generator>
+    
+      <item>
+        <title>SPSE Certification</title>
+        <description>&lt;p&gt;The &lt;a href=&quot;http://www.securitytube-training.com/online-courses/securitytube-python-scripting-expert/index.html&quot; target=&quot;_blank&quot;&gt;SecurityTube Python Scripting Expert (SPSE) course&lt;/a&gt; is an online certification, and accompanying videos designed to teach students how to apply Python programming techniques to security and networking concepts.&lt;/p&gt;
+&lt;p align=&quot;center&quot;&gt;
+&lt;img src=&quot;/images/SPSE/PYTHON.png&quot; /&gt;
+&lt;/p&gt;
+
+&lt;h3 id=&quot;thoughts-on-the-course&quot;&gt;Thoughts on the Course&lt;/h3&gt;
+
+&lt;p&gt;This course is actually something my previous employer bought me a couple of years ago, that I put a little bit of time into, but haven’t really looked at in a long time. One of the positives of this certification and course is you can do it entirely at your own pace. All the materials are DRM-free and downloadable, and you don’t lose access to the course website after a certain period of time. I made the decision in November to attempt to complete the SPSE coursework and certification. A negative of adding this cert to your LinkedIn is the name. “SecurityTube” is a horrible name, and sounds like some sort of site for hosting Rule 34 DEFCON videos. Vivek also runs &lt;a href=&quot;http://www.pentesteracademy.com/&quot; target=&quot;_blank&quot;&gt;PentesterAcademy&lt;/a&gt; which is a much better name, and would be a better title for the certification.&lt;/p&gt;
+
+&lt;p&gt;I wouldn’t recommend this course to someone that isn’t somewhat familiar with Python as well as the various concepts outline in the course. Vivek does fairly minimal explanations of background concepts, which is fine if you’re somewhat familiar with them already, but I think it would be difficult for a beginner to understand. The course requires a fair bit of extra research, during which I have learned/re-learned a lot of important concepts, but be warned that you’ll have to do this kind of extra work with little guidance. The course should point students towards helpful resources to help focus their study.&lt;/p&gt;
+
+&lt;p&gt;Another recurring downside is that it hasn’t been maintained or kept up to date. This seems to be a theme with Vivek’s courses as the &lt;a href=&quot;http://www.securitytube-training.com/online-courses/securitytube-ios-security-expert/&quot; target=&quot;_blank&quot;&gt;iOS Security Expert&lt;/a&gt; course lists iOS 5.1 as the minimum requirement. This course is plagued by outdated modules which have been replaced by better alternatives, which I’ll cover on a per Module basis.&lt;/p&gt;
+
+&lt;p&gt;Another problem is its lack of testing framework, skeleton code, or instructions on verifying your code is working correctly. For example, an exercise will instruct you to inject ARP packets but not tell you how to verify that things are working correctly. You can view the exercise solution videos, but those give away too much information. Trying to learn the commands for ARP at the same time as writing a script to manipulate ARP traffic is asking a novice/intermediate to solve too many problems at once. Is my script wrong? or are my tests wrong? I tried to document helpful resources on a per-exercise basis in the code comments.&lt;/p&gt;
+
+&lt;p&gt;Another issue I take with this course is its lack of adherence to a Python style guide and it’s lack of compatibility between Python 2 and 3. Fairly minor gripes—but I think that if you’re instructing students, you should setting a good example.&lt;/p&gt;
+
+&lt;p&gt;I’ll be periodically updating this post as I complete modules, and sharing my thoughts as I go.&lt;/p&gt;
+
+&lt;h3 id=&quot;module-1&quot;&gt;Module 1&lt;/h3&gt;
+
+&lt;p&gt;I don’t have much to say about Module 1. I reviewed the PDF slide notes and exercises and determined that is was largely material that I already knew. I think it’s too basic for someone with a background in Python, but not nearly enough for someone that isn’t familiar with Python. I would strong recommend starting with a different course if your Python skills are minimal.&lt;/p&gt;
+
+&lt;h3 id=&quot;module-2&quot;&gt;Module 2&lt;/h3&gt;
+&lt;p&gt;Module 2 is great at times, and confusing at others. After completely Modules 2 and 3 it’s clear that the course was originally in a different order. Module 2’s system programming aspects have good exercises, like visually representing a directory traversal and connecting to FTP sites. Unfortunately there is a bunch of other stuff that is thrown in haphazardly and requires you to complete Module 3 prior to completing the exercises.&lt;/p&gt;
+
+&lt;p&gt;There is no shortage of things that fall under “System Programming” that could be included in this module.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://github.com/leifdreizler/SPSE/tree/master/Module%202&quot; target=&quot;_blank&quot;&gt;Here are my solutions on GitHub.&lt;/a&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;module-3&quot;&gt;Module 3&lt;/h3&gt;
+&lt;p&gt;Module 3 has a lot of overlap with Module 2 exercises. Many of the exercises center around adding multiprocessing or multithreading to things, despite this being a Module 2 concept. I like the idea of integrating concepts from previous modules into future exercises, but they shouldn’t be the center of the exercise, or too reptitive. Module 3 should focus on sockets and the Scapy module.&lt;/p&gt;
+
+&lt;p&gt;The sockets work is interesting and helps you learn what’s going on beneath the hood with Scapy. One problem I have with the sockets programming exercises are that they rely heavily on “magic numbers” which aren’t explained or referenced anywhere in the exercises. There is value in leaving certain things to the student to discover, I don’t think random static ARP packet field values are in that list.&lt;/p&gt;
+
+&lt;p&gt;The Scapy exercises are all pretty good with the exception of the Wifi Sniffer exercise. Getting Wifi working in a Linux VM is actually easiest if you have a USB wifi dongle, which most people don’t have. If I had known about the &lt;a href=&quot;https://github.com/phaethon/scapy&quot;&gt;Python3 version of Scapy&lt;/a&gt;, I would have checked it out. All of the Scapy related exercises are completed using Python2.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://github.com/leifdreizler/SPSE/tree/master/Module%203&quot; target=&quot;_blank&quot;&gt;Here are my solutions on GitHub.&lt;/a&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;module-4&quot;&gt;Module 4&lt;/h3&gt;
+&lt;p&gt;Most of the libraries used in Module 4 have been replaced by better alternatives. I’m not promoting chasing the hottest new module/framework/etc. but not mentioning the &lt;a href=&quot;http://docs.python-requests.org/en/master/&quot; target=&quot;_blank&quot;&gt;Requests&lt;/a&gt; library is criminal. It’s one of the most popular Python packages of all time, is beautifully written, and frequently mentioned in StackOverflow posts. urllib should get a brief mention (similar to sockets before Scapy), but Requests should receive most of the attention.&lt;/p&gt;
+
+&lt;p&gt;Mechanize is also showing its age, with the last commit on GitHub being in 2012 and having no support for Python3. I would recommend replacement with MechanicalSoup, which is built on top of BeautifulSoup and Requests. BeautifulSoup gets covered in the current coursework, and Requests should be, making MechanicalSoup a logical progression. In another module you’re told to go research ZSI, a Python library that hasn’t been updated in almost a decade.&lt;/p&gt;
+
+&lt;p&gt;The last two video lectures combine attempt to combine content from the previous videos and combine it into an exercise that reviews previous material. Unfortunately, it also introduces storing information in databases which hasn’t been covered at all and the remainder of the OWASP Top 10 in two videos with a combined runtime of ~5 minutes. I took a databases course while studying abroad in college 5 years ago, and did a couple years of appsec consulting so I was reasonably prepared for this exercise, but many students wouldn’t be based off of the previous coursework.&lt;/p&gt;
+
+&lt;p&gt;Again, I’m all for encouraging students to do their own research, but there should have been at least an introduction to databases before giving an exercise that relies heavily on using one.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://github.com/leifdreizler/SPSE/tree/master/Module%204&quot; target=&quot;_blank&quot;&gt;Here are my solutions on GiHub.&lt;/a&gt;&lt;/p&gt;
+</description>
+        <pubDate>Wed, 21 Dec 2016 02:00:00 -0800</pubDate>
+        <link>https://leifdreizler.com//2016/SPSE-Thoughts/</link>
+        <guid isPermaLink="true">https://leifdreizler.com//2016/SPSE-Thoughts/</guid>
+        
+        <category>SPSE</category>
+        
+        <category>Python</category>
+        
+        <category>SecurityTube Python Scripting Expert</category>
+        
+        
+        <category>SPSE</category>
+        
+      </item>
+    
+      <item>
+        <title>Installing Cowrie (an SSH Honeypot) on Centos 7</title>
+        <description>&lt;p&gt;As part of work for a future blog post I decided to install and monitor an SSH honeypot 🍯 . A honeypot is a decoy designed to attract and monitor hostile users. Honeypots can serve as a canary—allowing system administrators to improve defenses throughout their network, or be used as a way to study attackers.&lt;/p&gt;
+&lt;p align=&quot;center&quot;&gt;
+&lt;img src=&quot;/images/cowrie/hp.jpg&quot; style=&quot;-webkit-filter: drop-shadow(3px 3px 3px #222); filter: drop-shadow(3px 3px 3px #222);&quot; /&gt;
+&lt;/p&gt;
+
+&lt;p&gt;It’s powered by the following:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;https://www.centos.org/&quot; target=&quot;_blank&quot;&gt;CentOS 7&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://github.com/micheloosterhof/cowrie&quot; target=&quot;_blank&quot;&gt;Cowrie&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;introduction&quot;&gt;Introduction&lt;/h2&gt;
+
+&lt;p&gt;&lt;em&gt;“Cowrie is a medium interaction SSH and Telnet honeypot designed to log brute force attacks and the shell interaction performed by the attacker”,&lt;/em&gt; developed by Michel Oosterhof, and is an actively maintained fork of &lt;a href=&quot;https://github.com/desaster/kippo&quot; target=&quot;_blank&quot;&gt;Kippo&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://github.com/micheloosterhof/cowrie#user-content-features&quot; target=&quot;_blank&quot;&gt;Cowrie’s features&lt;/a&gt; include the ability to log an attacker’s movement through a fake filesystem and save files that attack attempts to download.&lt;/p&gt;
+
+&lt;p&gt;I would strongly advise against running Cowrie on a server that is hosting things you care about. Cowrie could have it’s own &lt;a href=&quot;https://github.com/micheloosterhof/cowrie/wiki/Frequently-Asked-Questions&quot; target=&quot;_blank&quot;&gt;security issues&lt;/a&gt; and should be isolated from the rest of your environment.&lt;/p&gt;
+
+&lt;h2 id=&quot;references&quot;&gt;References&lt;/h2&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;https://leifdreizler.com/2016/Base-Setup/&quot; target=&quot;_blank&quot;&gt;My Baseline CentOS Setup&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://www.digitalocean.com/community/tutorials/how-to-install-kippo-an-ssh-honeypot-on-an-ubuntu-cloud-server&quot; target=&quot;_blank&quot;&gt;How To Install Kippo, an SSH Honeypot, on an Ubuntu Cloud Server&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;getting-started&quot;&gt;Getting Started&lt;/h2&gt;
+
+&lt;p&gt;I’ll assume you’re starting with a CentOS 7 server that has firewalld enabled. If you don’t have these configured you can follow my &lt;a href=&quot;https://leifdreizler.com/2016/Base-Setup/&quot; target=&quot;_blank&quot;&gt;previous guide&lt;/a&gt; about setting up a CentOS 7 server in &lt;a href=&quot;https://m.do.co/c/d669cfd3f8d6&quot; target=&quot;_blank&quot;&gt;DigitalOcean&lt;/a&gt;. Stop when you reach the “Let’s Encrypt and Nginx” section.&lt;/p&gt;
+
+&lt;p&gt;If you have completed that section that’s fine too—it won’t impact the setup of the honeypot. However, I would strongly encourage you &lt;strong&gt;not&lt;/strong&gt; to run a honeypot on the same host as things you care about, as mentioned above.&lt;/p&gt;
+
+&lt;h2 id=&quot;reconfiguring-ssh-and-firewalld&quot;&gt;Reconfiguring SSH and Firewalld&lt;/h2&gt;
+
+&lt;p&gt;We’ll need to move SSH to another port to make room for the honeypot.&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;sudo emacs /etc/ssh/sshd_config&lt;/code&gt;&lt;/li&gt;
+  &lt;li&gt;Uncomment and change &lt;code class=&quot;highlighter-rouge&quot;&gt;#Port 22&lt;/code&gt; to &lt;code class=&quot;highlighter-rouge&quot;&gt;Port 222&lt;/code&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;sudo systemctl restart sshd&lt;/code&gt;&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;In the future you will have to SSH into your server using &lt;code class=&quot;highlighter-rouge&quot;&gt;-p 222&lt;/code&gt; appended, or edit your &lt;a href=&quot;https://www.digitalocean.com/community/tutorials/how-to-configure-custom-connection-options-for-your-ssh-client&quot; target=&quot;_blank&quot;&gt;SSH config file&lt;/a&gt; to specify a port for this host. We’ll also have to make some changes to &lt;code class=&quot;highlighter-rouge&quot;&gt;firewalld&lt;/code&gt;.&lt;/p&gt;
+
+&lt;p&gt;Cowrie is not supposed to run as root, so we’ll need to redirect port 22 to a non-priveleged port. By default Cowrie runs on 2222, so we’ll use that.&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;# Open up port for real SSH connection
+$ sudo firewall-cmd --permanent --add-port=222/tcp
+success
+$ sudo firewall-cmd --zone=public --add-masquerade --permanent
+success
+$ sudo firewall-cmd --zone=public --add-forward-port=port=22:proto=tcp:toport=2222 --permanent
+success
+$ sudo firewall-cmd --permanent --list-all
+public (default)
+  interfaces: 
+  sources: 
+  services: ssh
+  ports: 222/tcp
+  masquerade: yes
+  forward-ports: port=22:proto=tcp:toport=2222:toaddr=
+  icmp-blocks: 
+  rich rules:
+$ sudo firewall-cmd --reload
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;h2 id=&quot;installing-and-configuring-cowrie&quot;&gt;Installing and Configuring Cowrie&lt;/h2&gt;
+
+&lt;p&gt;You’ll need to install a handful of dependcies and Python libraries to install and run Cowrie.&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;$ sudo yum -y upgrade
+$ sudo yum install -y epel-release
+$ sudo yum install -y gcc libffi-devel python-devel openssl-devel git python-pip pycrypto
+$ sudo pip install configparser pyOpenSSL tftpy twisted==15.2.0 
+$ sudo adduser cowrie
+$ sudo passwd cowrie
+$ su - cowrie
+$ git clone https://github.com/micheloosterhof/cowrie.git
+$ cd cowrie
+$ mv cowrie.cfg.dist cowrie.cfg
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;Edit your &lt;code class=&quot;highlighter-rouge&quot;&gt;cowrie.cfg&lt;/code&gt; file and uncomment &lt;code class=&quot;highlighter-rouge&quot;&gt;#listen_port = 2222&lt;/code&gt;. In this file you will find tons of options, which you can explore on your own.&lt;/p&gt;
+
+&lt;h4 id=&quot;connecting-to-cowrie&quot;&gt;Connecting to Cowrie&lt;/h4&gt;
+
+&lt;p&gt;Start Cowrie and use &lt;code class=&quot;highlighter-rouge&quot;&gt;tail&lt;/code&gt; to monitor the logfile. You can stop Cowrie buy running &lt;code class=&quot;highlighter-rouge&quot;&gt;./stop.sh&lt;/code&gt;&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;./start.sh
+Starting cowrie with extra arguments [] ...
+$ tail -F log/cowrie.log
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;Open a local terminal tab, erase your server’s SSH fingerprint, and then SSH to the honeypot using the username ‘root’ and any password except ‘root’ or ‘123456’ as found in &lt;a href=&quot;https://github.com/micheloosterhof/cowrie/blob/master/honeyfs/etc/passwd&quot; target=&quot;_blank&quot;&gt;/honeyfs/etc/passwd&lt;/a&gt; file.&lt;/p&gt;
+
+&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;# Replace with your server&#39;s hostname
+local$ ssh-keygen -R &lt;span style=&quot;color:red&quot;&gt;138.68.62.198&lt;/span&gt;
+local$ ssh root@&lt;span style=&quot;color:red&quot;&gt;138.68.62.198&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;You can view any active connections by going back to the terminal tab running &lt;code class=&quot;highlighter-rouge&quot;&gt;tail&lt;/code&gt;.&lt;/p&gt;
+
+&lt;p&gt;Any actions taken within the honeypot will be stored in the &lt;code class=&quot;highlighter-rouge&quot;&gt;log&lt;/code&gt; directory for you to review in the future. I find the .log file easier to view in realtime, and the .json files easier to parse.&lt;/p&gt;
+
+&lt;h4 id=&quot;conclusion&quot;&gt;Conclusion&lt;/h4&gt;
+
+&lt;p&gt;You should expect a few hundred to a few thousand login attempts per day, which creates plenty of chances to test the various configuration options of Cowrie on your uninvited guests. I highly encourage you to dive into the &lt;a href=&quot;https://github.com/micheloosterhof/cowrie&quot; target=&quot;_blank&quot;&gt;Cowrie GitHub repo&lt;/a&gt; for an overview of additional features, and look at the codebase starting with the .cfg file.&lt;/p&gt;
+</description>
+        <pubDate>Wed, 23 Nov 2016 04:00:00 -0800</pubDate>
+        <link>https://leifdreizler.com//2016/Installing-Cowrie/</link>
+        <guid isPermaLink="true">https://leifdreizler.com//2016/Installing-Cowrie/</guid>
+        
+        <category>CentOS 7</category>
+        
+        <category>Cowrie</category>
+        
+        
+        <category>Honeypot</category>
+        
+      </item>
+    
+      <item>
+        <title>Writing your first Slack /slash Command, Powered by Flask</title>
+        <description>&lt;p&gt;This guide will walk you through setting up a very basic Slack application powered by Flask. It will use the &lt;a href=&quot;http://smmry.com/&quot; target=&quot;_blank&quot;&gt;SMMRY API&lt;/a&gt; to take an article, summarize it and return text back into Slack.&lt;/p&gt;
+&lt;p align=&quot;center&quot;&gt;
+&lt;img src=&quot;/images/slack/slack.png&quot; style=&quot;-webkit-filter: drop-shadow(3px 3px 3px #222); filter: drop-shadow(3px 3px 3px #222);&quot; /&gt;
+&lt;/p&gt;
+
+&lt;p&gt;It’s powered by the following:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;https://www.centos.org/&quot; target=&quot;_blank&quot;&gt;CentOS 7&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://www.nginx.com/&quot; target=&quot;_blank&quot;&gt;NGINX&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://letsencrypt.org/&quot; target=&quot;_blank&quot;&gt;Let’s Encrypt&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;http://gunicorn.org/&quot; target=&quot;_blank&quot;&gt;Gunicorn&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;http://flask.pocoo.org/&quot; target=&quot;_blank&quot;&gt;Flask&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://slack.com/&quot; target=&quot;_blank&quot;&gt;Slack&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;flask-setup&quot;&gt;Flask Setup&lt;/h2&gt;
+
+&lt;p&gt;If you’re using something like &lt;a href=&quot;https://www.heroku.com/&quot; target=&quot;_blank&quot;&gt;Heroku&lt;/a&gt;, skip down to Slack &lt;a href=&quot;#slack-setup&quot;&gt;Slack Setup&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;This guide will assume you’re starting with my &lt;a href=&quot;https://leifdreizler.com/2016/Base-Setup/&quot; target=&quot;_blank&quot;&gt;baseline CentOS setup&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;Later in the guide you’ll need to access ports 5000/tcp and 8000/tcp, so we’ll open that up now.&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;$ sudo firewall-cmd --permanent --add-port=5000/tcp
+success
+$ sudo firewall-cmd --permanent --add-port=8000/tcp
+success
+$ sudo firewall-cmd --permanent --list-all
+public (default)
+  interfaces: 
+  sources: 
+  services: http https ssh
+  ports: 5000/tcp 8000/tcp
+  masquerade: no
+  forward-ports: 
+  icmp-blocks: 
+  rich rules: 
+$ sudo firewall-cmd --reload
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;Next, complete this &lt;a href=&quot;https://www.digitalocean.com/community/tutorials/how-to-serve-flask-applications-with-gunicorn-and-nginx-on-centos-7&quot; target=&quot;_blank&quot;&gt;How To Serve Flask Applications with Gunicorn and Nginx on CentOS 7&lt;/a&gt; from Digitial Ocean. The only difference is that under the “Configuring Nginx to Proxy Requests” you will need to edit &lt;code class=&quot;highlighter-rouge&quot;&gt;/etc/nginx/conf.d/ssl.conf&lt;/code&gt; instead of &lt;code class=&quot;highlighter-rouge&quot;&gt;/etc/nginx/nginx.conf&lt;/code&gt;.&lt;/p&gt;
+
+&lt;p&gt;Here is my &lt;code class=&quot;highlighter-rouge&quot;&gt;ssl.conf&lt;/code&gt; file for reference:&lt;/p&gt;
+
+&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;server {
+        listen 443 ssl http2;
+        listen [::]:443 ssl http2;
+
+        server_name &lt;span style=&quot;color:red&quot;&gt;leifdreizler.com www.leifdreizler.com&lt;/span&gt;;
+
+        ssl_certificate /etc/letsencrypt/live/&lt;span style=&quot;color:red&quot;&gt;leifdreizler.com&lt;/span&gt;/fullchain.pem;
+        ssl_certificate_key /etc/letsencrypt/live/&lt;span style=&quot;color:red&quot;&gt;leifdreizler.com&lt;/span&gt;/privkey.pem;
+
+        ssl_protocols TLSv1.2;
+        ssl_prefer_server_ciphers on;
+        ssl_dhparam /etc/ssl/certs/dhparam.pem;
+        ssl_ciphers &#39;ECDHE-ECDSA-AES256-GCM-SHA384:ECDHE-RSA-AES256-GCM-SHA384:ECDHE-ECDSA-CHACHA20-POLY1305:ECDHE-RSA-CHACHA20-POLY1305:ECDHE-ECDSA-AES128-GCM-SHA256:ECDHE-RSA-AES128-GCM-SHA256:ECDHE-ECDSA-AES256-SHA384:ECDHE-RSA-AES256-SHA384:ECDHE-ECDSA-AES128-SHA256:ECDHE-RSA-AES128-SHA256&#39;;
+        ssl_session_timeout 1d;
+        ssl_session_cache shared:SSL:50m;
+        ssl_session_tickets off;
+        ssl_stapling on;
+        ssl_stapling_verify on;
+        add_header Strict-Transport-Security max-age=15768000;
+        ## verify chain of trust of OCSP response using Root CA and Intermediate certs
+        ssl_trusted_certificate /etc/letsencrypt/live/&lt;span style=&quot;color:red&quot;&gt;leifdreizler.com&lt;/span&gt;/fullchain.pem;
+
+        location / {
+            proxy_set_header Host $http_host;   
+            proxy_set_header X-Real-IP $remote_addr;
+            proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
+            proxy_set_header X-Forwarded-Proto $scheme;
+            proxy_pass http://unix:/home/&lt;span style=&quot;color:red&quot;&gt;leif/slack/summary.sock&lt;/span&gt;;
+    }
+}
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h2 id=&quot;slack-setup&quot;&gt;Slack Setup&lt;/h2&gt;
+
+&lt;p&gt;&lt;a href=&quot;http://www.programmableweb.com/news/how-to-use-slack-api-to-build-slash-commands-powered-google-app-engine-and-go/how-to/2015/09/16&quot; target=&quot;_blank&quot;&gt;This guide&lt;/a&gt; does a good job of walking you through the basics of registering a Slack /slash command. When you get to the section “Creating your Project in Google Cloud” come back to this guide.&lt;/p&gt;
+
+&lt;h2 id=&quot;flask-and-slack-setup&quot;&gt;Flask and Slack Setup&lt;/h2&gt;
+
+&lt;p&gt;While testing the application, I run the flask application on port 5000 as you saw in the Digital Ocean guide, with debug mode on. When testing using this method you will need to go back into your Slack configuration and change the URL which your /slash command POSTs to.&lt;/p&gt;
+
+&lt;p align=&quot;center&quot;&gt;
+&lt;img src=&quot;/images/slack/slack2.png&quot; /&gt;
+&lt;/p&gt;
+
+&lt;p&gt;Here is the initial Flask application, replace the &lt;code class=&quot;highlighter-rouge&quot;&gt;host=&lt;/code&gt; with your server’s IP address!&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;kn&quot;&gt;from&lt;/span&gt; &lt;span class=&quot;nn&quot;&gt;flask&lt;/span&gt; &lt;span class=&quot;kn&quot;&gt;import&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;Flask&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;application&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;Flask&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;__name__&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+
+&lt;span class=&quot;nd&quot;&gt;@application.route&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;/&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;methods&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&#39;POST&#39;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;])&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;hello&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;():&lt;/span&gt;
+    &lt;span class=&quot;k&quot;&gt;print&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;request&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;get_data&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt;
+    &lt;span class=&quot;k&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;Response&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;test&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;status&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;200&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+
+&lt;span class=&quot;k&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;__name__&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;==&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&quot;__main__&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;
+    &lt;span class=&quot;n&quot;&gt;application&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;run&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;host&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&#39;138.68.17.99&#39;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;debug&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;bp&quot;&gt;True&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;Run your Flask app by typing /summarize into slack. You should recieve a “test” message in Slack, and your server should recieve a chunk of information about the message you just sent, as well as your Slack team.&lt;/p&gt;
+
+&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;$ python &lt;span style=&quot;color:red&quot;&gt;summary.py&lt;/span&gt;
+ * Running on http://&lt;span style=&quot;color:red&quot;&gt;138.68.17.99&lt;/span&gt;:5000/ (Press CTRL+C to quit)
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger pin code: 827-866-054
+token=[Secret Token]&amp;amp;team_id=[Team ID]&amp;amp;team_domain=[Team name]&amp;amp;channel_id=C[Channel ID]&amp;amp;channel_name=[Channel Name]&amp;amp;user_id=[User ID]&amp;amp;user_name=[User Name]&amp;amp;command=%2Fsummarize&amp;amp;text=&amp;amp;response_url=[Response URL]
+[Slack IP Address] - - [04/Nov/2016 13:44:48] &quot;POST / HTTP/1.1&quot; 200 -
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p align=&quot;center&quot;&gt;
+&lt;img src=&quot;/images/slack/slack1.png&quot; /&gt;
+&lt;/p&gt;
+
+&lt;h2 id=&quot;slack-and-flask-basics&quot;&gt;Slack and Flask Basics&lt;/h2&gt;
+
+&lt;h4 id=&quot;slack&quot;&gt;Slack&lt;/h4&gt;
+&lt;p&gt;Now that you’ve got Flask and Slack talking to each other, let’s cover some basics. &lt;a href=&quot;https://api.slack.com/slash-commands&quot; target=&quot;_blank&quot;&gt;This page&lt;/a&gt; covers some very useful information regarding Slack slash commands, and I highly recommend that you read through it. Here are some highlights:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Slack stops waiting for a response after 3 seconds&lt;/li&gt;
+  &lt;li&gt;If you need longer than 3s you should reply with a 200 and reply later&lt;/li&gt;
+  &lt;li&gt;Data sent to your server will have a &lt;code class=&quot;highlighter-rouge&quot;&gt;content-type&lt;/code&gt; of &lt;code class=&quot;highlighter-rouge&quot;&gt;application/x-www-form-urlencoded&lt;/code&gt;&lt;/li&gt;
+  &lt;li&gt;Data sent back to Slack should have a &lt;code class=&quot;highlighter-rouge&quot;&gt;content-type&lt;/code&gt; of &lt;code class=&quot;highlighter-rouge&quot;&gt;application/json&lt;/code&gt;&lt;/li&gt;
+  &lt;li&gt;Message Formatting and Attachments&lt;/li&gt;
+  &lt;li&gt;“In Channel” vs. “Ephemeral” Messages&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Most of this will through in the example, but I highly suggest reading the &lt;strong&gt;How do commands work?&lt;/strong&gt; section.&lt;/p&gt;
+
+&lt;h4 id=&quot;flask&quot;&gt;Flask&lt;/h4&gt;
+
+&lt;p&gt;Best practice dictates that if you have secret keys, you should set them as environment variables instead of leaving them in your Python files. This helps keep them out of places like GitHub. For the testing on 5000 you can simply export them to your &lt;code class=&quot;highlighter-rouge&quot;&gt;profile&lt;/code&gt;.&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;$ source summaryenv/bin/activate
+$ export SMMRY_API_KEY=123456
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;To make them to be active when running outside of testing, you’ll need to add them to the service you created using &lt;a href=&quot;https://www.digitalocean.com/community/tutorials/how-to-serve-flask-applications-with-gunicorn-and-nginx-on-centos-7&quot; target=&quot;_blank&quot;&gt;How To Serve Flask Applications with Gunicorn and Nginx on CentOS 7&lt;/a&gt;. There is an extended explanation in the comments section (thanks &lt;a href=&quot;https://www.digitalocean.com/community/users/jellingwood&quot;&gt;jellingwood&lt;/a&gt; for this help!)&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;sudo emacs /etc/systemd/system/myproject.service&lt;/code&gt;&lt;/li&gt;
+  &lt;li&gt;Add a new line under the [Service] Section&lt;/li&gt;
+  &lt;li&gt;`Environment=”SMRRY_API_KEY=123456”&lt;/li&gt;
+  &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;sudo systemctl daemon-reload&lt;/code&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;sudo systemctl restart myproject.service&lt;/code&gt;&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;To retrieve environment variables, use the following code snippet as an example:&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;k&quot;&gt;try&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;
+    &lt;span class=&quot;n&quot;&gt;api_key&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;os&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;environ&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&#39;SMMRY_API_KEY&#39;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;except&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;KeyError&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;
+    &lt;span class=&quot;k&quot;&gt;print&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&quot;SMMRY API key not set, please register at: http://smmry.com/partner and set SMMRY_API_KEY environment var&quot;&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;h2 id=&quot;communicating-between-flask-and-slack&quot;&gt;Communicating between Flask and Slack&lt;/h2&gt;
+
+&lt;p&gt;To access fields sent from Slack, you will need to know the names of the fields that you’re being sent. You printed these out earlier with &lt;code class=&quot;highlighter-rouge&quot;&gt;request.get_data()&lt;/code&gt;. To access a specific field use: request.form.get(‘fieldname’).&lt;/p&gt;
+
+&lt;p&gt;To send data back to Slack, format it using following pattern (some advanced examples are in &lt;a href=&quot;https://www.viget.com/articles/how-to-build-your-own-slack-app-and-bot&quot; target=&quot;_blank&quot;&gt;this article&lt;/a&gt;).&lt;/p&gt;
+
+&lt;p&gt;Below is a basic example of returning a reply to yourself in Slack.&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;kn&quot;&gt;from&lt;/span&gt; &lt;span class=&quot;nn&quot;&gt;flask&lt;/span&gt; &lt;span class=&quot;kn&quot;&gt;import&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;Flask&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;request&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;Response&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;jsonify&lt;/span&gt;
+&lt;span class=&quot;kn&quot;&gt;import&lt;/span&gt; &lt;span class=&quot;nn&quot;&gt;os&lt;/span&gt;
+&lt;span class=&quot;kn&quot;&gt;import&lt;/span&gt; &lt;span class=&quot;nn&quot;&gt;json&lt;/span&gt;
+
+&lt;span class=&quot;n&quot;&gt;application&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;Flask&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;__name__&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+
+&lt;span class=&quot;k&quot;&gt;try&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;
+    &lt;span class=&quot;n&quot;&gt;api_key&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;os&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;environ&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&#39;SMMRY_API_KEY&#39;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt;
+    &lt;span class=&quot;n&quot;&gt;slack_token&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;os&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;environ&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&#39;SLACK_TOKEN&#39;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;except&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;KeyError&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;
+    &lt;span class=&quot;k&quot;&gt;print&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&quot;SMMRY API key not set, please register at: http://smmry.com/partner and set SMMRY_API_KEY environment var&quot;&lt;/span&gt;
+
+&lt;span class=&quot;nd&quot;&gt;@application.route&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;/&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;methods&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&#39;POST&#39;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;])&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;parse_request&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;():&lt;/span&gt;
+    &lt;span class=&quot;c&quot;&gt;# Check to see if your team&#39;s token is the same, if not ignore the request&lt;/span&gt;
+    &lt;span class=&quot;k&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;request&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;form&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;get&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&#39;token&#39;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;==&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;slack_token&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;
+      &lt;span class=&quot;n&quot;&gt;data&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+        &lt;span class=&quot;s&quot;&gt;&quot;text&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&quot;It&#39;s 80 degrees right now.&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;
+        &lt;span class=&quot;s&quot;&gt;&quot;attachments&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;
+        &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+          &lt;span class=&quot;s&quot;&gt;&quot;text&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;Partly cloudy today and tomorrow&quot;&lt;/span&gt;
+        &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+        &lt;span class=&quot;p&quot;&gt;]&lt;/span&gt;
+      &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+
+      &lt;span class=&quot;k&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;Response&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;response&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;json&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;dumps&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;data&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;),&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;status&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;200&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;mimetype&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;application/json&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+
+    &lt;span class=&quot;k&quot;&gt;return&lt;/span&gt; 
+
+&lt;span class=&quot;k&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;__name__&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;==&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&quot;__main__&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;
+    &lt;span class=&quot;n&quot;&gt;application&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;run&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;host&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&#39;138.68.17.99&#39;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;debug&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;bp&quot;&gt;True&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; 
+
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;h2 id=&quot;smmry-api-call&quot;&gt;SMMRY API Call&lt;/h2&gt;
+
+&lt;p&gt;This section of code will go over how to make a call to the &lt;a href=&quot;http://smmry.com/api&quot; target=&quot;_blank&quot;&gt;SMRRY API&lt;/a&gt;, and format it in a way that will look good in Slack.&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;kn&quot;&gt;import&lt;/span&gt; &lt;span class=&quot;nn&quot;&gt;json&lt;/span&gt;
+&lt;span class=&quot;kn&quot;&gt;import&lt;/span&gt; &lt;span class=&quot;nn&quot;&gt;urllib2&lt;/span&gt;
+
+&lt;span class=&quot;n&quot;&gt;api_url&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&#39;http://api.smmry.com/&#39;&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;try&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;
+    &lt;span class=&quot;n&quot;&gt;api_key&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;os&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;environ&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&#39;SMMRY_API_KEY&#39;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;except&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;KeyError&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;
+    &lt;span class=&quot;k&quot;&gt;print&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&quot;SMMRY API key not set, please register at: http://smmry.com/partner and set SMMRY_API_KEY environment var&quot;&lt;/span&gt;
+
+
+&lt;span class=&quot;k&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;call_smmry&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;():&lt;/span&gt;
+    &lt;span class=&quot;n&quot;&gt;api_url&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&#39;http://api.smmry.com/&#39;&lt;/span&gt;
+    &lt;span class=&quot;n&quot;&gt;num_sentences&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&#39;3&#39;&lt;/span&gt;
+    &lt;span class=&quot;c&quot;&gt;# article to summarize, later we will replace this with input from slack                                                                           &lt;/span&gt;
+    &lt;span class=&quot;n&quot;&gt;article&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&quot;https://krebsonsecurity.com/2016/10/hackers-hit-u-s-senate-gop-committee/&quot;&lt;/span&gt;
+    &lt;span class=&quot;n&quot;&gt;url&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;api_url&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;+&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&quot;&amp;amp;SM_API_KEY=&quot;&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;+&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;api_key&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;+&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&quot;&amp;amp;SM_LENGTH=&quot;&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;+&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;num_sentences&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;+&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&quot;&amp;amp;SM_URL=&quot;&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;+&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;article&lt;/span&gt;
+    &lt;span class=&quot;c&quot;&gt;# use the requests library to call the SMMRY API                                                                                                   &lt;/span&gt;
+    &lt;span class=&quot;n&quot;&gt;r&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;requests&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;post&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;url&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+    &lt;span class=&quot;c&quot;&gt;# retrieve &#39;text&#39; field from SMMRY response                                                                                                        &lt;/span&gt;
+    &lt;span class=&quot;c&quot;&gt;# loading it as JSON allows you to retrieve fields as a python dictionary                                                                          &lt;/span&gt;
+    &lt;span class=&quot;n&quot;&gt;summy&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;json&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;loads&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;r&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;text&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+
+    &lt;span class=&quot;c&quot;&gt;# format message for slack                                                                                                                         &lt;/span&gt;
+    &lt;span class=&quot;c&quot;&gt;# *bold* \n creates a newline                                                                                                                      &lt;/span&gt;
+    &lt;span class=&quot;n&quot;&gt;data&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+    &lt;span class=&quot;c&quot;&gt;# this will display the message to all users in the channel instead of just you&lt;/span&gt;
+    &lt;span class=&quot;s&quot;&gt;&quot;response_type&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&quot;in_channel&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;
+            &lt;span class=&quot;s&quot;&gt;&quot;text&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;*&quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;+&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;summy&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;sm_api_title&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;+&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;* &lt;/span&gt;&lt;span class=&quot;se&quot;&gt;\n&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;+&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;summy&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;sm_api_content&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt;
+        &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+    &lt;span class=&quot;c&quot;&gt;# temporarily print the data just to verify it is correct                                                                                          &lt;/span&gt;
+    &lt;span class=&quot;k&quot;&gt;print&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;data&lt;/span&gt;
+
+    &lt;span class=&quot;k&quot;&gt;return&lt;/span&gt;
+
+&lt;span class=&quot;n&quot;&gt;call_smmry&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;h2 id=&quot;slightly-less-basic-communication-between-flask-and-slack&quot;&gt;Slightly Less Basic communication between Flask and Slack&lt;/h2&gt;
+
+&lt;p&gt;You can use all of the normal &lt;a href=&quot;https://api.slack.com/docs/message-formatting&quot; target=&quot;_blank&quot;&gt;Slack formatting&lt;/a&gt; when replying to Slack.&lt;/p&gt;
+
+&lt;h2 id=&quot;tying-it-all-together&quot;&gt;Tying it all Together&lt;/h2&gt;
+
+&lt;p&gt;This section of code will combine the previous code snippets, and explain how they work together.&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;kn&quot;&gt;from&lt;/span&gt; &lt;span class=&quot;nn&quot;&gt;flask&lt;/span&gt; &lt;span class=&quot;kn&quot;&gt;import&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;Flask&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;request&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;Response&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;jsonify&lt;/span&gt;
+&lt;span class=&quot;kn&quot;&gt;import&lt;/span&gt; &lt;span class=&quot;nn&quot;&gt;os&lt;/span&gt;
+&lt;span class=&quot;kn&quot;&gt;import&lt;/span&gt; &lt;span class=&quot;nn&quot;&gt;json&lt;/span&gt;
+
+&lt;span class=&quot;n&quot;&gt;application&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;Flask&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;__name__&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+
+&lt;span class=&quot;k&quot;&gt;try&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;
+    &lt;span class=&quot;n&quot;&gt;api_key&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;os&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;environ&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&#39;SMMRY_API_KEY&#39;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt;
+    &lt;span class=&quot;n&quot;&gt;slack_token&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;os&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;environ&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&#39;SLACK_TOKEN&#39;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;except&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;KeyError&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;
+    &lt;span class=&quot;k&quot;&gt;print&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&quot;SMMRY API key not set, please register at: http://smmry.com/partner and set SMMRY_API_KEY environment var&quot;&lt;/span&gt;
+
+&lt;span class=&quot;nd&quot;&gt;@application.route&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;/&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;methods&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&#39;POST&#39;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;])&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;parse_request&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;():&lt;/span&gt;
+  &lt;span class=&quot;c&quot;&gt;# get form data to pass to SMMRY&lt;/span&gt;
+  &lt;span class=&quot;n&quot;&gt;request_data&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;request&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;form&lt;/span&gt;
+
+  &lt;span class=&quot;c&quot;&gt;# need to reply w/ a 200 to slack, and then wait for SMMRY to parse &lt;/span&gt;
+  &lt;span class=&quot;c&quot;&gt;# and then do a 2nd response if you take longer than 3s to reply&lt;/span&gt;
+  &lt;span class=&quot;n&quot;&gt;threading&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;Thread&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;target&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;real_response&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;args&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;request_data&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;])&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;start&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt;
+
+  &lt;span class=&quot;k&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;Response&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;status&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;200&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+
+    
+&lt;span class=&quot;k&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;real_response&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;request_data&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;):&lt;/span&gt;
+  &lt;span class=&quot;n&quot;&gt;api_url&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&#39;http://api.smmry.com/&#39;&lt;/span&gt;
+  &lt;span class=&quot;n&quot;&gt;num_sentences&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&#39;3&#39;&lt;/span&gt; 
+  &lt;span class=&quot;c&quot;&gt;# retrieve the message body from Slack&lt;/span&gt;
+  &lt;span class=&quot;n&quot;&gt;article&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;request_data&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;get&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&#39;text&#39;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+  &lt;span class=&quot;n&quot;&gt;url&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;api_url&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;+&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&quot;&amp;amp;SM_API_KEY=&quot;&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;+&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;api_key&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;+&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&quot;&amp;amp;SM_LENGTH=&quot;&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;+&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;num_sentences&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;+&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&quot;&amp;amp;SM_URL=&quot;&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;+&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;article&lt;/span&gt;
+  &lt;span class=&quot;c&quot;&gt;# use the requests library to call the SMMRY API  &lt;/span&gt;
+  &lt;span class=&quot;n&quot;&gt;r&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;requests&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;post&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;url&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+  &lt;span class=&quot;c&quot;&gt;# retrieve &#39;text&#39; field from SMMRY response                                                                                                        &lt;/span&gt;
+  &lt;span class=&quot;c&quot;&gt;# loading it as JSON allows you to retrieve fields as a python dictionary     &lt;/span&gt;
+  &lt;span class=&quot;n&quot;&gt;summy&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;json&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;loads&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;r&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;text&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+
+  &lt;span class=&quot;c&quot;&gt;# format message for slack                                                                                                                         &lt;/span&gt;
+  &lt;span class=&quot;c&quot;&gt;# *bold* \n creates a newline &lt;/span&gt;
+  &lt;span class=&quot;n&quot;&gt;data&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+  &lt;span class=&quot;c&quot;&gt;# this will display the message to all users in the channel instead of just you&lt;/span&gt;
+    &lt;span class=&quot;s&quot;&gt;&quot;response_type&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&quot;in_channel&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;
+      &lt;span class=&quot;s&quot;&gt;&quot;text&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;*&quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;+&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;summy&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;sm_api_title&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;+&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;* &lt;/span&gt;&lt;span class=&quot;se&quot;&gt;\n&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;+&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;summy&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;sm_api_content&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt;
+  &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+
+  &lt;span class=&quot;c&quot;&gt;# use unquote to remove URL encoding from the URL provided by SLack&lt;/span&gt;
+  &lt;span class=&quot;n&quot;&gt;response_url&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;urllib2&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;unquote&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;request_data&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;get&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&#39;response_url&#39;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;))&lt;/span&gt;
+  &lt;span class=&quot;n&quot;&gt;header&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;content-type&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;application/json&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+  &lt;span class=&quot;n&quot;&gt;requests&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;post&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;response_url&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;headers&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;header&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;data&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;json&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;dumps&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;data&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;))&lt;/span&gt;
+  &lt;span class=&quot;k&quot;&gt;return&lt;/span&gt;
+
+
+&lt;span class=&quot;k&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;__name__&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;==&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&quot;__main__&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;
+    &lt;span class=&quot;n&quot;&gt;application&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;run&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;host&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&#39;138.68.17.99&#39;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;debug&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;bp&quot;&gt;True&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; 
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;You should now be able to type &lt;code class=&quot;highlighter-rouge&quot;&gt;/summarize link&lt;/code&gt; and have get a 3 sentence summary of the article in Slack!&lt;/p&gt;
+
+&lt;h2 id=&quot;finishing-up&quot;&gt;Finishing Up&lt;/h2&gt;
+
+&lt;p&gt;Remove &lt;code class=&quot;highlighter-rouge&quot;&gt;debug=true&lt;/code&gt; from your Flask app and close your &lt;code class=&quot;highlighter-rouge&quot;&gt;firewalld&lt;/code&gt; ports back up and you’re all done!&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;# Remove the now unnecessary 5000 and 8000 ports
+$ sudo firewall-cmd --permanent --remove-port=5000/tcp
+success
+$ sudo firewall-cmd --permanent --remove-port=8000/tcp
+success
+$ sudo firewall-cmd --permanent --list-all
+public (default)
+  interfaces: 
+  sources: 
+  services: http https ssh
+  ports: 
+  masquerade: no
+  forward-ports: 
+  icmp-blocks: 
+  rich rules: 
+$ sudo firewall-cmd --reload
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;h2 id=&quot;whats-next&quot;&gt;What’s next?&lt;/h2&gt;
+
+&lt;p&gt;This was meant to be a small, but realistic example of how to create a /slash command in Slack. It covers some basic Python libraries in the process but isn’t really meant to be production ready. It lacks even basic error handling and won’t scale using the threading method I employed.&lt;/p&gt;
+
+&lt;p&gt;If you’re interested in continuing your work with Flask and Slack, &lt;a href=&quot;https://realpython.com/blog/python/getting-started-with-the-slack-api-using-python-and-flask/&quot; target=&quot;_blank&quot;&gt;this guide&lt;/a&gt; would be a good next step.&lt;/p&gt;
+
+&lt;p&gt;If you’re interested in adding a production ready summarization tool to your Slack team, you should check out &lt;a href=&quot;http://cymetica.com/slack/sumbot/&quot; target=&quot;_blank&quot;&gt;CyMetica&lt;/a&gt;. I haven’t used it, but it looks like it has the desired functionality.&lt;/p&gt;
+</description>
+        <pubDate>Mon, 21 Nov 2016 02:00:00 -0800</pubDate>
+        <link>https://leifdreizler.com//2016/First-Slack-App/</link>
+        <guid isPermaLink="true">https://leifdreizler.com//2016/First-Slack-App/</guid>
+        
+        <category>CentOS 7</category>
+        
+        <category>NGINX</category>
+        
+        <category>Let&#39;s Encrypt</category>
+        
+        <category>Gunicorn</category>
+        
+        <category>Flask</category>
+        
+        <category>Slack</category>
+        
+        
+        <category>Slack App</category>
+        
+      </item>
+    
+      <item>
+        <title>Baseline CentOS Snapshot</title>
+        <description>&lt;p&gt;In the process of writing a few blog posts, I’ve realized that I use the same few Digital Ocean guides to get everything setup, and then make a few additional changes. Instead of repeating work across blog posts, and jumping back and forth between DO guides I’m going to walk you through creating a solid baseline DO snapshot which can be used to create new droplets in the future.&lt;/p&gt;
+&lt;p align=&quot;center&quot;&gt;
+&lt;img src=&quot;/images/centos/logo.png&quot; /&gt;
+&lt;/p&gt;
+
+&lt;p&gt;It’s powered by the following:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;https://www.centos.org/&quot; target=&quot;_blank&quot;&gt;CentOS 7&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://www.nginx.com/&quot; target=&quot;_blank&quot;&gt;NGINX&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://letsencrypt.org/&quot; target=&quot;_blank&quot;&gt;Let’s Encrypt&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;getting-started&quot;&gt;Getting Started&lt;/h2&gt;
+
+&lt;p&gt;I’m a huge fan of &lt;a href=&quot;https://www.digitalocean.com&quot; target=&quot;_blank&quot;&gt;DigitalOcean&lt;/a&gt;, and use them to host a few projects including this site. If you don’t have a Digital Ocean account, use my &lt;a href=&quot;https://m.do.co/c/d669cfd3f8d6&quot; target=&quot;_blank&quot;&gt;referral code&lt;/a&gt; to get $10 🙃&lt;/p&gt;
+
+&lt;p&gt;Part of why I love DigitalOcean is because of their extensive &lt;a href=&quot;https://www.digitalocean.com/community/tutorials/&quot; target=&quot;_blank&quot;&gt;community guides&lt;/a&gt;. They cover a range of topics covering various permutations of operating systems, webservers, programming languages, etc.&lt;/p&gt;
+
+&lt;p&gt;At this point I’ll assume you have already registered a domain, pointed the appropriate DNS records to your CentOS droplet’s IP address, are at least generally familiar with linux, and can make minor adjustments to the guide based off differences in your environment.&lt;/p&gt;
+
+&lt;p&gt;I’m also a big fan of DO’s ‘snapshot’ feature, which creates a point-in-time copy of your droplet which you can later restore from. I use it frequently when trying out new things as a way to restore to a previous working condition in case I mess something up.&lt;/p&gt;
+
+&lt;h2 id=&quot;references&quot;&gt;References&lt;/h2&gt;
+
+&lt;p&gt;This guide is an attempt to walk you through my additions or changes to the DO CentOS setup process, but won’t go into in depth explanations. If you need more context, please review:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;https://www.digitalocean.com/community/tutorials/initial-server-setup-with-centos-7&quot; target=&quot;_blank&quot;&gt;Initial Server Setup with CentOS 7&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://www.digitalocean.com/community/tutorials/additional-recommended-steps-for-new-centos-7-servers&quot; target=&quot;_blank&quot;&gt;Additional Recommended Steps for New CentOS 7 Servers&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://www.digitalocean.com/community/tutorials/how-to-secure-nginx-with-let-s-encrypt-on-centos-7&quot; target=&quot;_blank&quot;&gt;How To Secure Nginx with Let’s Encrypt on CentOS 7&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;setting-up-and-securing-centos&quot;&gt;Setting up and Securing CentOS&lt;/h2&gt;
+
+&lt;p&gt;Throughout the guide:&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;# This is a comment about what I&#39;m doing
+$ This is a command to run
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;I have attempted to highlight differences in your &lt;span style=&quot;color:red&quot;&gt;variables, users, etc&lt;/span&gt; in red, so watch out for those!&lt;/p&gt;
+
+&lt;p&gt;Log into your server using the ssh key you provided DO during the setup process. If you didn’t setup a public key, do so at this time.&lt;/p&gt;
+
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;local$ ssh &lt;span style=&quot;color:red&quot;&gt;root&lt;/span&gt;@&lt;span style=&quot;color:red&quot;&gt;138.68.44.75&lt;/span&gt;&lt;/code&gt;&lt;/p&gt;
+
+&lt;h4 id=&quot;users-and-ssh&quot;&gt;Users and SSH&lt;/h4&gt;
+
+&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;$ sudo yum install -y epel-release 
+# Leave out emacs if you prefer a different editor
+$ sudo yum install -y ntp certbot nginx &lt;span style=&quot;color:red&quot;&gt;emacs&lt;/span&gt;
+$ adduser &lt;span style=&quot;color:red&quot;&gt;leif&lt;/span&gt;
+$ passwd &lt;span style=&quot;color:red&quot;&gt;leif&lt;/span&gt;
+$ gpasswd -a &lt;span style=&quot;color:red&quot;&gt;leif&lt;/span&gt; wheel
+$ su - &lt;span style=&quot;color:red&quot;&gt;leif&lt;/span&gt;
+$ mkdir .ssh
+$ chmod 700 .ssh
+$ touch .ssh/authorized_keys
+$ chmod 600 .ssh/authorized_keys
+$ exit
+$ cat .ssh/authorized_keys &amp;gt; /home/&lt;span style=&quot;color:red&quot;&gt;leif&lt;/span&gt;/.ssh/authorized_keys 
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Next we’ll make some changes to your SSH config to help protect your droplet 🇨🇳   🇷🇺&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;Edit your ssh config &lt;code class=&quot;highlighter-rouge&quot;&gt;$ emacs /etc/ssh/sshd_config&lt;/code&gt;&lt;/li&gt;
+  &lt;li&gt;Change &lt;code class=&quot;highlighter-rouge&quot;&gt;#PasswordAuthentication Yes&lt;/code&gt; to &lt;code class=&quot;highlighter-rouge&quot;&gt;PasswordAuthentication No&lt;/code&gt;&lt;/li&gt;
+  &lt;li&gt;Change &lt;code class=&quot;highlighter-rouge&quot;&gt;#PermitRootLogin Yes&lt;/code&gt; to &lt;code class=&quot;highlighter-rouge&quot;&gt;PermitRootLogin No&lt;/code&gt;&lt;/li&gt;
+  &lt;li&gt;Reload sshd: &lt;code class=&quot;highlighter-rouge&quot;&gt;$ systemctl reload sshd&lt;/code&gt;&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;Open up a new terminal window on your local machine and test ssh: &lt;code class=&quot;highlighter-rouge&quot;&gt;$ ssh &lt;span style=&quot;color:red&quot;&gt;leif&lt;/span&gt;@&lt;span style=&quot;color:red&quot;&gt;138.68.44.75&lt;/span&gt;&lt;/code&gt;. If that works, close your root console tab and continue using the account you just created.&lt;/p&gt;
+
+&lt;p&gt;I highly recommend adding an &lt;a href=&quot;https://www.digitalocean.com/community/tutorials/how-to-configure-custom-connection-options-for-your-ssh-client&quot; target=&quot;_blank&quot;&gt;entry to your local SSH config&lt;/a&gt; to make logging into your server easier in the future.&lt;/p&gt;
+
+&lt;h4 id=&quot;firewall&quot;&gt;Firewall&lt;/h4&gt;
+
+&lt;p&gt;For &lt;code class=&quot;highlighter-rouge&quot;&gt;firewalld&lt;/code&gt; you should enable http and https. SSH should already be enabled.&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;$ sudo systemctl start firewalld
+$ sudo firewall-cmd --permanent --add-service=http
+success
+$ sudo firewall-cmd --permanent --add-service=https
+success
+$ sudo firewall-cmd --permanent --list-all
+public (default)
+  interfaces: 
+  sources: 
+  services: http https ssh
+  ports: 
+  masquerade: no
+  forward-ports: 
+  icmp-blocks: 
+  rich rules: 
+$ sudo firewall-cmd --reload
+$ sudo systemctl enable firewalld
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;h4 id=&quot;timezones-ntp-swap-file-and-automatic-updates&quot;&gt;Timezones, NTP, Swap File, and Automatic Updates&lt;/h4&gt;
+
+&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;$ sudo timedatectl list-timezones
+$ sudo timedatectl set-timezone &lt;span style=&quot;color:red&quot;&gt;America/Los_Angeles&lt;/span&gt;
+$ sudo timedatectl
+$ sudo systemctl start ntpd
+$ sudo systemctl enable ntpd
+$ sudo fallocate -l 1G /swapfile
+$ sudo chmod 600 /swapfile
+$ sudo mkswap /swapfile
+$ sudo swapon /swapfile
+$ sudo sh -c &#39;echo &quot;/swapfile none swap sw 0 0&quot; &amp;gt;&amp;gt; /etc/fstab&#39;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Next is to turn on automatic updates, which will help keep your site safe from the latest security threats.&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;# Install yum-cron
+$ sudo yum install -y yum-cron
+# Configure yum-cron (replace emacs with editor of your choice)
+$ sudo emacs /etc/yum/yum-cron.conf
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+&lt;p&gt;Edit &lt;code class=&quot;highlighter-rouge&quot;&gt;apply_updates = yes&lt;/code&gt;&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;$ sudo systemctl enable yum-cron
+$ sudo systemctl start yum-cron
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;The basic CentOS setup is complete, now we’ll move onto Let’s Encrypt and Nginx.&lt;/p&gt;
+
+&lt;p&gt;📸	  If you’re newer to linux, or just cautious you may want to take a snapshot at this point.&lt;/p&gt;
+
+&lt;h3 id=&quot;lets-encrypt-and-nginx&quot;&gt;Let’s Encrypt and Nginx&lt;/h3&gt;
+
+&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;$ echo -e &quot;location ~ /.well-known {\n\tallow all;\n}&quot; | sudo tee /etc/nginx/default.d/le-well-known.conf
+$ sudo systemctl restart nginx
+$ sudo openssl dhparam -out /etc/ssl/certs/dhparam.pem 2048
+# Enter your email and agree to the Terms
+$ sudo certbot certonly -a webroot --webroot-path=/usr/share/nginx/html -d &lt;span style=&quot;color:red&quot;&gt;leifdreizler.com&lt;/span&gt; -d &lt;span style=&quot;color:red&quot;&gt;www.leifdreizler.com&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;$ sudo emacs /etc/nginx/conf.d/ssl.conf&lt;/code&gt; and paste in the following config:&lt;/p&gt;
+
+&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;server {
+        listen 443 ssl http2;
+        listen [::]:443 ssl http2;
+
+        server_name &lt;span style=&quot;color:red&quot;&gt;leifdreizler.com www.leifdreizler.com&lt;/span&gt;;
+
+        ssl_certificate /etc/letsencrypt/live/&lt;span style=&quot;color:red&quot;&gt;leifdreizler.com&lt;/span&gt;/fullchain.pem;
+        ssl_certificate_key /etc/letsencrypt/live/&lt;span style=&quot;color:red&quot;&gt;leifdreizler.com&lt;/span&gt;/privkey.pem;
+
+        ssl_protocols TLSv1.2;
+        ssl_prefer_server_ciphers on;
+        ssl_dhparam /etc/ssl/certs/dhparam.pem;
+        ssl_ciphers &#39;ECDHE-ECDSA-AES256-GCM-SHA384:ECDHE-RSA-AES256-GCM-SHA384:ECDHE-ECDSA-CHACHA20-POLY1305:ECDHE-RSA-CHACHA20-POLY1305:ECDHE-ECDSA-AES128-GCM-SHA256:ECDHE-RSA-AES128-GCM-SHA256:ECDHE-ECDSA-AES256-SHA384:ECDHE-RSA-AES256-SHA384:ECDHE-ECDSA-AES128-SHA256:ECDHE-RSA-AES128-SHA256&#39;;
+        ssl_session_timeout 1d;
+        ssl_session_cache shared:SSL:50m;
+	ssl_session_tickets off;
+        ssl_stapling on;
+        ssl_stapling_verify on;
+        add_header Strict-Transport-Security max-age=15768000;
+	## verify chain of trust of OCSP response using Root CA and Intermediate certs
+    	ssl_trusted_certificate /etc/letsencrypt/live/&lt;span style=&quot;color:red&quot;&gt;leifdreizler.com&lt;/span&gt;/fullchain.pem;
+
+	
+
+        location ~ /.well-known {
+                allow all;
+        }
+
+        # The rest of your server block
+        root /usr/share/nginx/html;
+        index index.html index.htm;
+
+        location / {
+                # First attempt to serve request as file, then
+                # as directory, then fall back to displaying a 404.
+                try_files $uri $uri/ =404;
+                # Uncomment to enable naxsi on this location
+                # include /etc/nginx/naxsi.rules
+        }
+}
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Setup a redirect to make sure all traffic goes over HTTPS:&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;$ echo -e &quot;return 301 https://$host$request_uri;&quot; | sudo tee /etc/nginx/default.d/ssl-redirect.conf
+$ sudo nginx -t
+$ sudo systemctl restart nginx
+$ sudo systemctl enable nginx
+$ sudo certbot renew
+$ sudo crontab -e
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;Press &lt;code class=&quot;highlighter-rouge&quot;&gt;i&lt;/code&gt; to enter edit mode and paste the following into crontab:&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;30 2 * * 1 /usr/bin/certbot renew &amp;gt;&amp;gt; /var/log/le-renew.log
+35 2 * * 1 /usr/bin/systemctl reload nginx
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;Quit crontab using by typing: Esc &lt;code class=&quot;highlighter-rouge&quot;&gt;:wq&lt;/code&gt; Enter&lt;/p&gt;
+
+&lt;p&gt;Visit &lt;span style=&quot;color:red&quot;&gt;leifdreizler.com&lt;/span&gt;, if you see the default Nginx page, you’re all done!&lt;/p&gt;
+
+&lt;p&gt;📸	  Take a snapshot! This is a working config that can be reverted back to in the future. You can also spin up new droplets based off of this config instead of starting over when you want to do a new project.&lt;/p&gt;
+
+&lt;p&gt;I’ll be going over some options in future blog posts, so stay tuned!   📺&lt;/p&gt;
+</description>
+        <pubDate>Thu, 03 Nov 2016 11:00:00 -0700</pubDate>
+        <link>https://leifdreizler.com//2016/Base-Setup/</link>
+        <guid isPermaLink="true">https://leifdreizler.com//2016/Base-Setup/</guid>
+        
+        <category>CentOS 7</category>
+        
+        <category>NGINX</category>
+        
+        <category>Let&#39;s Encrypt</category>
+        
+        
+        <category>my site</category>
+        
+      </item>
+    
+      <item>
+        <title>Building this Site</title>
+        <description>&lt;p&gt;In my first blog post I’m going to walk you through the process of building this blog.&lt;/p&gt;
+&lt;p align=&quot;center&quot;&gt;
+&lt;img src=&quot;/images/building/meta.jpg&quot; /&gt;
+&lt;/p&gt;
+
+&lt;p&gt;It’s powered by the following:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;https://www.centos.org/&quot; target=&quot;_blank&quot;&gt;CentOS 7&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://www.nginx.com/&quot; target=&quot;_blank&quot;&gt;NGINX&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://letsencrypt.org/&quot; target=&quot;_blank&quot;&gt;Let’s Encrypt&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://jekyllrb.com/&quot; target=&quot;_blank&quot;&gt;Jekyll&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;getting-started&quot;&gt;Getting Started&lt;/h2&gt;
+
+&lt;p&gt;I’m a huge fan of &lt;a href=&quot;https://www.digitalocean.com&quot; target=&quot;_blank&quot;&gt;DigitalOcean&lt;/a&gt;, and use them to host a few projects including this site. If you don’t have a Digital Ocean account, use my &lt;a href=&quot;https://m.do.co/c/d669cfd3f8d6&quot; target=&quot;_blank&quot;&gt;referral code&lt;/a&gt; to get $10 🙃&lt;/p&gt;
+
+&lt;p&gt;I have attempted to highlight differences in your &lt;span style=&quot;color:red&quot;&gt;variables, users, etc&lt;/span&gt; in red, so watch out for those!&lt;/p&gt;
+
+&lt;h2 id=&quot;setting-up-centos&quot;&gt;Setting up CentOS&lt;/h2&gt;
+
+&lt;p&gt;I have consolidated my CentOS setup process into &lt;a href=&quot;https://leifdreizler.com/2016/Base-Setup/&quot; target=&quot;_blank&quot;&gt;this blog post&lt;/a&gt;. It covers setting up users, firewalld, automatic updates, Nginx, Let’s Encrypt, etc. I’ll assume you have completed that blog post, or are comfortable making adjustments as needed.&lt;/p&gt;
+
+&lt;p&gt;Later in the guide you’ll need to access port 4000/tcp, so we’ll open that up now.&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;$ sudo firewall-cmd --permanent --add-port=4000/tcp
+success
+$ sudo firewall-cmd --permanent --list-all
+public (default)
+  interfaces: 
+  sources: 
+  services: http https ssh
+  ports: 4000/tcp
+  masquerade: no
+  forward-ports: 
+  icmp-blocks: 
+  rich rules: 
+$ sudo firewall-cmd --reload
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;h2 id=&quot;about-jekyll&quot;&gt;About Jekyll&lt;/h2&gt;
+
+&lt;p&gt;Jekyll is written in Ruby and can easily turn blog posts written in markdown into a simple, yet powerful website. It’s similar to &lt;a href=&quot;https://gohugo.io/&quot; target=&quot;_blank&quot;&gt;Hugo&lt;/a&gt; or &lt;a href=&quot;https://ghost.org/&quot; target=&quot;_blank&quot;&gt;ghost&lt;/a&gt;. Jekyll is used to power &lt;a href=&quot;https://pages.github.com/&quot; target=&quot;_blank&quot;&gt;GitHub Pages&lt;/a&gt;, which can be used in lieu of a bunch of things I set up manually as part of this blog post—and is also free 🤑&lt;/p&gt;
+
+&lt;p&gt;Most themes follow the same basic architecture. The two most important parts of a theme are the &lt;code class=&quot;highlighter-rouge&quot;&gt;_config.yml&lt;/code&gt; file and &lt;code class=&quot;highlighter-rouge&quot;&gt;_posts&lt;/code&gt; folder. The config file lets you change some basic information about the site including your name, links to social media, and things like the markdown parser or syntax highlighter.&lt;/p&gt;
+
+&lt;h2 id=&quot;installing-jekyll&quot;&gt;Installing Jekyll&lt;/h2&gt;
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;# some of these may be uneccessary, but can save you some headache later with gem installs
+$ sudo yum install -y ruby ruby-devel rubygems build-essential git zlib-devel gcc
+$ sudo gem install jekyll bundler
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;h2 id=&quot;setting-up-jekyll&quot;&gt;Setting up Jekyll&lt;/h2&gt;
+
+&lt;p&gt;Find a Jekyll theme online and go to its &lt;a href=&quot;https://github.com/joshgerdes/jekyll-uno&quot; target=&quot;_blank&quot;&gt;GitHub page&lt;/a&gt; and follow the installation instructions. If none are provided, try adapting the directions in the theme I used. Deal with the inevitable dumpster fire involved with installing ruby gems 🔥&lt;/p&gt;
+
+&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;# Navigate to the directory you want your site to live in, I chose ~/site
+$ mkdir &lt;span style=&quot;color:red&quot;&gt;~/site&lt;/span&gt; &amp;amp;&amp;amp; cd &lt;span style=&quot;color:red&quot;&gt;~/site&lt;/span&gt;
+# You could also &#39;fork&#39; the parent repo and then clone
+$ git clone https://github.com/&lt;span style=&quot;color:red&quot;&gt;joshgerdes/jekyll-uno&lt;/span&gt;.git
+$ cd &lt;span style=&quot;color:red&quot;&gt;jekyll-uno&lt;/span&gt;
+$ bundle install
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Customizing your Jekyll install is mostly done within your &lt;code class=&quot;highlighter-rouge&quot;&gt;_config.yml&lt;/code&gt; file. I adjusted title, description, url, baseurl and the social media links. You can see my &lt;a href=&quot;https://github.com/leifdreizler/leifdreizler.com/blob/master/_config.yml&quot; target=&quot;_blank&quot;&gt;config file on GitHub&lt;/a&gt;.&lt;/p&gt;
+
+&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;$ bundle exec jekyll serve --host=&lt;span style=&quot;color:red&quot;&gt;138.68.44.75&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Visit &lt;span style=&quot;color:red&quot;&gt;138.68.44.75&lt;/span&gt;:4000 in your browser just to make sure that everything is running properly, then exit Jekyll with Ctrl+C.&lt;/p&gt;
+
+&lt;p&gt;📸	  Take a snapshot once your Jekyll theme is working&lt;/p&gt;
+
+&lt;h2 id=&quot;reconfiguring-nginx&quot;&gt;Reconfiguring nginx&lt;/h2&gt;
+
+&lt;p&gt;We’ll need to make some minor edits to our existing nginx configuration to accomodate the Jekyll site.&lt;/p&gt;
+
+&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;$ sudo usermod -a -G &lt;span style=&quot;color:red&quot;&gt;leif&lt;/span&gt; nginx
+$ chmod 710 /home/&lt;span style=&quot;color:red&quot;&gt;leif&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;When you edit &lt;code class=&quot;highlighter-rouge&quot;&gt;$ sudo emacs /etc/nginx/conf.d/ssl.conf&lt;/code&gt;, either copy mine (below) or edit the following directives manually:&lt;/p&gt;
+
+&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;root /home/&lt;span style=&quot;color:red&quot;&gt;leif/site/jekyll-uno&lt;/span&gt;/_site;
+index index.html
+autoindex off;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;server {
+        listen 443 ssl http2;
+        listen [::]:443 ssl http2;
+
+
+        server_name &lt;span style=&quot;color:red&quot;&gt;leifdreizler.com www.leifdreizler.com&lt;/span&gt;;
+
+        ssl_certificate /etc/letsencrypt/live/&lt;span style=&quot;color:red&quot;&gt;leifdreizler.com&lt;/span&gt;/fullchain.pem;
+        ssl_certificate_key /etc/letsencrypt/live/&lt;span style=&quot;color:red&quot;&gt;leifdreizler.com&lt;/span&gt;/privkey.pem;
+
+        ssl_protocols TLSv1.2;
+        ssl_prefer_server_ciphers on;
+        ssl_dhparam /etc/ssl/certs/dhparam.pem;
+        ssl_ciphers &#39;ECDHE-ECDSA-AES256-GCM-SHA384:ECDHE-RSA-AES256-GCM-SHA384:ECDHE-ECDSA-CHACHA20-POLY1305:ECDHE-RSA-CHACHA20-POLY1305:ECDHE-ECDSA-AES128-GCM-SHA256:ECDHE-RSA-AES128-GCM-SHA256:ECDHE-ECDSA-AES256-SHA384:ECDHE-RSA-AES256-SHA384:ECDHE-ECDSA-AES128-SHA256:ECDHE-RSA-AES128-SHA256&#39;;
+        ssl_session_timeout 1d;
+        ssl_session_cache shared:SSL:50m;
+	ssl_session_tickets off;
+        ssl_stapling on;
+        ssl_stapling_verify on;
+        add_header Strict-Transport-Security max-age=15768000;
+	## verify chain of trust of OCSP response using Root CA and Intermediate certs
+    	ssl_trusted_certificate /etc/letsencrypt/live/&lt;span style=&quot;color:red&quot;&gt;leifdreizler.com&lt;/span&gt;/fullchain.pem;
+
+        location ~ /.well-known {
+                allow all;
+        }
+
+        # The rest of your server block
+	root /home/&lt;span style=&quot;color:red&quot;&gt;leif/site/jekyll-uno&lt;/span&gt;/_site;
+	index index.html
+	autoindex off;
+
+        location / {
+                # First attempt to serve request as file, then
+                # as directory, then fall back to displaying a 404.
+                try_files $uri $uri/ =404;
+                # Uncomment to enable naxsi on this location
+                # include /etc/nginx/naxsi.rules
+        }
+}
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Check your nginx configuration for errors and restart:&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;$ sudo nginx -t
+$ sudo systemctl restart nginx
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;h2 id=&quot;finishing-touches&quot;&gt;Finishing Touches&lt;/h2&gt;
+
+&lt;p&gt;Confirm that you can access and navigate throughout your site by visiting https://&lt;span style=&quot;color:red&quot;&gt;leifdreizler.com&lt;/span&gt;&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;# Remove the now unnecessary 4000/tcp port 
+$ sudo firewall-cmd --permanent --remove-port=4000/tcp
+success
+$ sudo firewall-cmd --permanent --list-all
+public (default)
+  interfaces: 
+  sources: 
+  services: http https ssh
+  ports: 
+  masquerade: no
+  forward-ports: 
+  icmp-blocks: 
+  rich rules: 
+$ sudo firewall-cmd --reload
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;You’re all done! You now have a Jekyll blog with a custom theme served by NGINX running on CentOS 7 protected by a Let’s Encrypt SSL certificate 🙌&lt;/p&gt;
+
+&lt;p&gt;📸	  Take a snapshot, and optionally delete intermediate snapshots&lt;/p&gt;
+
+&lt;h2 id=&quot;your-first-post&quot;&gt;YOUR First Post&lt;/h2&gt;
+
+&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;$ cd ~/&lt;span style=&quot;color:red&quot;&gt;site/jekyll-uno&lt;/span&gt;/_posts
+# follow the YYYY-MM-DD-name-of-post.md naming convention
+$ cp &lt;span style=&quot;color:red&quot;&gt;existingpost.md newpost.md&lt;/span&gt;
+# Use your favorite text editor to adjust the contents, tags, etc.
+$ emacs newpost.md
+$ bundle exec jekyll build
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;When writing blog posts you may want to consider previewing them using an online markdown parser before posting them to your site. You can also use &lt;code class=&quot;highlighter-rouge&quot;&gt;$ bundle exec jekyll build --watch&lt;/code&gt; to automatically post blog updates whenever you save the markdown file.&lt;/p&gt;
+</description>
+        <pubDate>Fri, 28 Oct 2016 11:00:00 -0700</pubDate>
+        <link>https://leifdreizler.com//2016/Building-This-Site/</link>
+        <guid isPermaLink="true">https://leifdreizler.com//2016/Building-This-Site/</guid>
+        
+        <category>CentOS 7</category>
+        
+        <category>NGINX</category>
+        
+        <category>Let&#39;s Encrypt</category>
+        
+        <category>Jekyll</category>
+        
+        
+        <category>my site</category>
+        
+      </item>
+    
+  </channel>
+</rss>
