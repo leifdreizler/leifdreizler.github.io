@@ -9,10 +9,8 @@ The security industry generally agrees on the value of enabling developers in an
 
 [Segment blog](https://segment.com/blog/shifting-engineering-right/)
 
+[LASCON 2021 conference presentation](https://www.youtube.com/watch?v=R-hs5jnmeoE)
+
 [AppSec Weekly Episode #146: Shifting Engineering Right: What Security Engineers Can Learn From DevSecOps](https://securityweekly.com/shows/shifting-right-what-security-engineers-can-learn-from-devsecops-leif-dreizler-asw-146/)
 
 [The Application Security Podcast: Tactical tips to shift engineering right](https://www.youtube.com/watch?v=a_JfPsYbkxg&t=1s)
-
-[LASCON 2021 conference presentation](https://www.youtube.com/watch?v=R-hs5jnmeoE)
-
-
