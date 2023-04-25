@@ -7,4 +7,4 @@ tags: [owasp api top 10, bug bounty, nolacon]
 
 An ever-increasing number of applications have released public and private APIs, enabling awesome programmatic features to be released internally and to the world. Unfortunately, the ubiquity of APIs is a double-edged sword -- and security risks are often ignored. This talk introduces the OWASP API Security Project, including the Top Ten API Security Risks, and explains how contributors of many skill levels can get involved.
 
-Conference Link: [Nolacon 2016](https://www.youtube.com/watch?v=s2oTXr5mV3s)
+[Nolacon 2016](https://www.youtube.com/watch?v=s2oTXr5mV3s)

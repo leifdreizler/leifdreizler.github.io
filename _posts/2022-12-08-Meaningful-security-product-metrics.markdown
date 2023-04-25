@@ -10,4 +10,6 @@ This type of thinking helps you break people out of the “security is a cost ce
 
 This blog was featured in the 162nd tl;dr sec and the 361st Unsupervised Listening newsletters.
 
-Blog Link: Tracking Meaningful Security Product Metrics
+[Segment blog](https://segment.com/blog/track-meaningful-security-product-metrics/)
+
+[BSides SF 2023](https://sched.co/1IHM0)

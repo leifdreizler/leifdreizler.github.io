@@ -7,4 +7,4 @@ tags: [product security, sso, jwt, scim]
 
 I was invited back to the Absolute AppSec podcast to discuss how security can embed within engineering teams. We discussed how to plan a successful embed within another team as well as various authentication-related topics including SSO, JWTs, and SCIM.
 
-Podcast Link: [Absolute AppSec Episode #104](https://www.youtube.com/watch?v=jmM6lc3xWDQ)
+[Absolute AppSec Episode #104](https://www.youtube.com/watch?v=jmM6lc3xWDQ)

@@ -12,4 +12,4 @@ At Segment, we use vulnerability report data and gamification to help our develo
 
 We’ve found this approach really helpful to increasing security before release, almost eliminating one class of vulnerability reports. In this session, I’ll talk about the details of how we do this security training—see if you think this could help you!
 
-Conference Link: [LocoMocoSec 2019](https://www.youtube.com/watch?v=cnz4X3yoI08)
+[LocoMocoSec 2019](https://www.youtube.com/watch?v=cnz4X3yoI08)
