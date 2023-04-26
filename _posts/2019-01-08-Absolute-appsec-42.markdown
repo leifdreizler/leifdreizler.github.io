@@ -2,7 +2,7 @@
 title: "Absolute AppSec Episode #42"
 date: 2019-01-08 12:00:00
 categories: [podcast]
-tags: [developer training, product security, ssrf]
+tags: [developer training, product security, ssrf, absolute appsec]
 ---
 
 Members of Segment's security and engineering teams appeared on the Absolute AppSec podcast to discuss product security features, SSRF mitigations, developer training, and our approach to building a security program.

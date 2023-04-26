@@ -2,7 +2,7 @@
 title: "Tracking Meaningful Security Product Metrics"
 date: 2022-12-08 12:00:00
 categories: [blog]
-tags: [security metrics, cross-functional communication, business enablement]
+tags: [security metrics, cross-functional communication, business enablement, segment blog]
 ---
 
 The right metrics empower teams to communicate cross-functionally, and help educate other departments about what’s important and how things are getting better (or worse) over time. As a security leader you may also be able to show new metrics that demonstrate that your organization is not only mitigating risk, but also helping drive sales. This will make your security org quite a bit more popular with go-to-market folks and business-minded engineering leaders.

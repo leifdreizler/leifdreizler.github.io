@@ -2,7 +2,7 @@
 title: "The InfoSec community needs you (yes, you)!"
 date: 2023-02-08 12:00:00
 categories: [blog]
-tags: [infosec community involvement, blogging, presenting]
+tags: [infosec community involvement, blogging, presenting, personal blog]
 ---
 
 This blog provides guidance on how to get started with blogging and presenting in the InfoSec community. The InfoSec community needs new speakers, and that could be you!
